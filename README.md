@@ -31,6 +31,10 @@
         evaluation_gt.csv
         farmers-protest-tweets.json
         tweet_document_ids_map.csv
+    > Fonts
+        NotoSans.ttf
+        NotoSansDevanagari.ttf
+        NotoSansGurmukhi.ttf
     project1.ipynb
     README.md
     requirements.txt
