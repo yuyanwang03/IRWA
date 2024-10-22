@@ -13,7 +13,7 @@
 
     ```
     $ python -m venv <nameVenv>
-    $ source <pathToVenvActivate>
+    $ source <youPathToVenvActivate>
     ```
 
 1. Installing the necessary packages. We are providing the requirements.txt file.
@@ -24,19 +24,31 @@
 
 2. Use the corresponding Python3 as the Jupyter Notebook Kernel
 
-3. We're assuming that the structure of the existing working directory looks like:
+3. Locate yourself inside the project part folder that you would like to execute. E.g. for part 1 you should cd the folder named `Part1`
 
     ```
-    > data
-        evaluation_gt.csv
-        farmers-protest-tweets.json
-        tweet_document_ids_map.csv
-    > Fonts
-        NotoSans.ttf
-        NotoSansDevanagari.ttf
-        NotoSansGurmukhi.ttf
-    project1.ipynb
-    README.md
-    requirements.txt
-    processed_data.csv (this will be generated after the whole sript)
+    $ cd <projectPartXFolder>
     ```
+
+4. The structure of the working directory for each part should look like:
+
+    * Part1: 
+        ```
+        > data
+            evaluation_gt.csv
+            farmers-protest-tweets.json
+            tweet_document_ids_map.csv
+        > Fonts
+            NotoSans.ttf
+            NotoSansDevanagari.ttf
+            NotoSansGurmukhi.ttf
+        project1.ipynb
+        processed_data.csv (this will be generated after the whole sript)
+        ```
+    
+    * Part2:
+        ```
+        > data
+            processed_data.csv (this would be the one generated from Part1)
+        project2.ipynb
+        ```
