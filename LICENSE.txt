@@ -1,0 +1,4 @@
+Copyright (c) 2024 Yuyan Wang  
+All Rights Reserved.
+
+This repository contains code and data for a college (UPF) assignment. Unauthorized use, reproduction, distribution, or modification of this material is strictly prohibited. Access is granted only to specified reviewers and cannot be used for any other purpose.
