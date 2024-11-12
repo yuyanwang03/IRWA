@@ -54,3 +54,10 @@
             personalized_evaluation_gt.csv
         project2.ipynb
         ```
+    
+    * Part3:
+        ```
+        > data
+            processed_data.csv (this would be the one generated from Part1)
+        project3.ipynb
+        ```

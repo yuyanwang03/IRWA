@@ -51,6 +51,7 @@ pyparsing==3.2.0
 python-dateutil==2.9.0.post0
 pytz==2024.2
 pyzmq==26.2.0
+rank-bm25==0.2.2
 referencing==0.35.1
 regex==2024.9.11
 rpds-py==0.20.0
