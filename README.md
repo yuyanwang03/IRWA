@@ -32,32 +32,41 @@
 
 4. The structure of the working directory for each part should look like:
 
-    * Part1: 
+    * [Part 1](./Part1/project1.ipynb): 
         ```
-        > data
-            evaluation_gt.csv
-            farmers-protest-tweets.json
-            tweet_document_ids_map.csv
-        > Fonts
-            NotoSans.ttf
-            NotoSansDevanagari.ttf
-            NotoSansGurmukhi.ttf
-        project1.ipynb
-        processed_data.csv (this will be generated after the whole sript)
-        ```
-    
-    * Part2:
-        ```
-        > data
-            processed_data.csv (this would be the one generated from Part1)
-            evaluation_gt.csv
-            personalized_evaluation_gt.csv
-        project2.ipynb
+        Part1/
+        ├── data/
+        │   ├── evaluation_gt.csv
+        │   ├── farmers-protest-tweets.json
+        │   ├── tweet_document_ids_map.csv
+        ├── Fonts/
+        │   ├── NotoSans.ttf
+        │   ├── NotoSansDevanagari.ttf
+        │   ├── NotoSansGurmukhi.ttf
+        ├── project1.ipynb
+        └── processed_data.csv  # This will be generated after running the script
         ```
     
-    * Part3:
+    * [Part 2](./Part2/project2.ipynb):
         ```
-        > data
-            processed_data.csv (this would be the one generated from Part1)
-        project3.ipynb
+        Part2/
+        ├── data/
+        │   ├── processed_data.csv  # This would be the one generated from Part 1
+        │   ├── evaluation_gt.csv
+        │   ├── personalized_evaluation_gt.csv
+        ├── project2.ipynb
+        ```
+    
+    * [Part 3](./Part3/project3.ipynb):
+        ```
+        Part3/
+        ├── data/
+        │   ├── processed_data.csv  # This would be the one generated from Part 1
+        ├── visualizations/ # All png will be generated after running the notebook
+        │   ├── bjpparti.png 
+        │   ├── humanrightviolat.png 
+        │   ├── indiaprotest.png 
+        │   ├── modishame.png 
+        │   ├── supportfarmer.png 
+        ├── project3.ipynb
         ```
