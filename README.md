@@ -38,11 +38,11 @@
         ├── data/
         │   ├── evaluation_gt.csv
         │   ├── farmers-protest-tweets.json
-        │   ├── tweet_document_ids_map.csv
+        │   └── tweet_document_ids_map.csv
         ├── Fonts/
         │   ├── NotoSans.ttf
         │   ├── NotoSansDevanagari.ttf
-        │   ├── NotoSansGurmukhi.ttf
+        │   └── NotoSansGurmukhi.ttf
         ├── project1.ipynb
         └── processed_data.csv  # This will be generated after running the script
         ```
@@ -53,8 +53,8 @@
         ├── data/
         │   ├── processed_data.csv  # This would be the one generated from Part 1
         │   ├── evaluation_gt.csv
-        │   ├── personalized_evaluation_gt.csv
-        ├── project2.ipynb
+        │   └── personalized_evaluation_gt.csv
+        └── project2.ipynb
         ```
     
     * [Part 3](./Part3/project3.ipynb):
@@ -67,6 +67,6 @@
         │   ├── humanrightviolat.png 
         │   ├── indiaprotest.png 
         │   ├── modishame.png 
-        │   ├── supportfarmer.png 
-        ├── project3.ipynb
+        │   └── supportfarmer.png 
+        └── project3.ipynb
         ```
