@@ -1,0 +1,40 @@
+import json
+
+class Document:
+    """
+    Represents a tweet from the corpus.
+    """
+    def __init__(self, id, content, date, hashtags, likes, retweets, url):
+        self.id = id
+        self.content = content
+        self.date = date
+        self.hashtags = hashtags
+        self.likes = likes
+        self.retweets = retweets
+        self.url = url
+
+    def to_json(self):
+        """
+        Convert the Document object to a JSON-like dictionary.
+        """
+        return self.__dict__
+
+    def __str__(self):
+        """
+        Print the object content as a JSON string.
+        """
+        return json.dumps(self.__dict__)
+
+class ResultItem:
+    """
+    Represents a search result.
+    """
+    def __init__(self, id, content, hashtags, url, ranking, date, likes, retweets):
+        self.id = id
+        self.content = content
+        self.hashtags = hashtags
+        self.url = url
+        self.ranking = ranking
+        self.date = date
+        self.likes = likes
+        self.retweets = retweets
