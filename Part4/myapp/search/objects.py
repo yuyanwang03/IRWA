@@ -4,7 +4,7 @@ class Document:
     """
     Represents a tweet from the corpus.
     """
-    def __init__(self, id, content, date, hashtags, likes, retweets, url):
+    def __init__(self, id, content, date, hashtags, likes, retweets, url, language):
         self.id = id
         self.content = content
         self.date = date
@@ -12,6 +12,7 @@ class Document:
         self.likes = likes
         self.retweets = retweets
         self.url = url
+        self.language = language
 
     def to_json(self):
         """
@@ -29,7 +30,7 @@ class ResultItem:
     """
     Represents a search result.
     """
-    def __init__(self, id, content, hashtags, url, ranking, date, likes, retweets):
+    def __init__(self, id, content, hashtags, url, ranking, date, likes, retweets, lang=None, user_name=None, user_id=None):
         self.id = id
         self.content = content
         self.hashtags = hashtags
@@ -38,3 +39,6 @@ class ResultItem:
         self.date = date
         self.likes = likes
         self.retweets = retweets
+        self.language = lang,
+        self.user_name = user_name
+        self.user_id = user_id

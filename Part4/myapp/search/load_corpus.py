@@ -25,13 +25,14 @@ def _row_to_doc_dict(row: pd.Series):
     """
     Converts a row of the DataFrame to a Document object and adds it to the corpus.
     """
-    _corpus[row['docidId']] = Document(
+    _corpus[row['docId']] = Document(
         id=row['id'], 
         content=row['content'], 
         date=row['date'], 
         hashtags=row['hashtags'], 
         likes=row['likes'], 
         retweets=row['retweets'], 
-        url=row['url']
+        url=row['url'],
+        language=row['language']
     )
 

@@ -60,3 +60,16 @@ input[type=submit]:hover {
     font-size: 0.95em;
     adding-left: 5px;
 }
+
+.pastel-primary {
+    background-color: #a3c9f3; /* Light pastel blue */
+    color: #000; /* Dark text for contrast */
+}
+.pastel-success {
+    background-color: #b6e7a5; /* Light pastel green */
+    color: #000; /* Dark text for contrast */
+}
+.pastel-info {
+    background-color: #f3d9e0; /* Light pastel pink */
+    color: #000; /* Dark text for contrast */
+}

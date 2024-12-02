@@ -1,23 +1,51 @@
 {% extends "base.html" %}
 {% block page_title %}{{ page_title }}{% endblock %}
 {% block content %}
-    Found <strong>{{ found_counter }}</strong> results...
+<div class="container py-4">
+    <h1>Search Results</h1>
+    <p>Found <strong>{{ found_counter }}</strong> results for "<em>{{ query }}</em>"</p>
     <hr>
-    {% for item in results_list %}
-        <div class="pb-3">
-            <div class="doc-title">
-                <a href="{{ item.url }}">{{ item.quote }}...
-                </a>
-            </div>
-            <div class="cited">
-                <cite> <a href="{{ item.url }}">{{ item.url }}</a></cite>
-            </div>
-            <div class="doc-desc">
-                {{ item.doc_date }} — {{ item.author }}
-            </div>
 
+    {% if results_list %}
+        <div class="list-group">
+            {% for item in results_list %}
+                <div class="list-group-item mb-3 p-3 border rounded shadow-sm">
+                    <h5 class="doc-title mb-1">
+                        <a href="{{ item.url }}" target="_blank" class="text-primary">
+                            {{ item.content[:50] }}... <!-- Title from a substring -->
+                        </a>
+                    </h5>
+                    <p class="doc-desc mb-1">
+                        {{ item.content }} <!-- Full tweet text -->
+                    </p>
+                    <div class="text-muted small mb-2">
+                        {{ item.date }} — <span>User: {{ item.user_name }}</span>
+                    </div>
+                    <div class="text-muted small mt-2">
+                        Language: {{ item.language[0] }}
+                    </div>
+                    <div>
+                        <span class="badge pastel-primary me-2">Likes: {{ item.likes }}</span>
+                        <span class="badge pastel-success me-2">Retweets: {{ item.retweets }}</span>
+                        <span class="badge pastel-info">Hashtags: {{ item.hashtags }}</span>
+                    </div>
+                    <div>
+                        <a href="{{ item.url }}" class="btn btn-sm btn-outline-primary mt-2" target="_blank">View Tweet</a>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
+    {% else %}
+        <p>No results found for "<em>{{ query }}</em>".</p>
+    {% endif %}
 
-    {% endfor %}
+    <!-- Pagination placeholder -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center mt-4">
+            <!-- Generate pagination links dynamically -->
+        </ul>
+    </nav>
+</div>
 {% endblock %}
+
 
