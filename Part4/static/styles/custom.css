@@ -18,11 +18,14 @@
 .btn-primary,
 .btn-primary:active,
 .btn-primary:focus,
-.btn-primary:hover,
 .btn-primary:not(:disabled):not(.disabled):active {
     /*color: #ffffff;*/
     background-color: #c8102e;
     border-color: #c8102e;
+}
+
+.btn-primary:hover {
+    background-color: #850a1e; /* Slightly lighter red for hover effect */
 }
 
 
@@ -72,4 +75,21 @@ input[type=submit]:hover {
 .pastel-info {
     background-color: #f3d9e0; /* Light pastel pink */
     color: #000; /* Dark text for contrast */
+}
+
+.badge {
+    display: inline-block; /* Ensures badges respect container boundaries */
+    max-width: 100%; /* Limits the badge to the container width */
+    white-space: nowrap; /* Prevents text from wrapping by default */
+    overflow: hidden; /* Hides any overflowing content */
+    text-overflow: ellipsis; /* Adds an ellipsis (...) for overflowed content */
+}
+
+.btn-red {
+    background-color: #c8102e;
+    color: white;
+    border: none;
+}
+.btn-red:hover {
+    background-color: #850a1e; /* Slightly lighter red for hover effect */
 }

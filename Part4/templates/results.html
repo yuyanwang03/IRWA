@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 {% block page_title %}{{ page_title }}{% endblock %}
 {% block content %}
+<div>
+    <a href="{{ url_for('index') }}" class="btn btn-primary">
+        Back to Home
+    </a>
+</div>
 <div class="container py-4">
+    <!-- Back to Home Button -->
     <h1>Search Results</h1>
     <p>Found <strong>{{ found_counter }}</strong> results for "<em>{{ query }}</em>"</p>
     <hr>
@@ -30,7 +36,10 @@
                         <span class="badge pastel-info">Hashtags: {{ item.hashtags }}</span>
                     </div>
                     <div>
-                        <a href="{{ item.url }}" class="btn btn-sm btn-outline-primary mt-2" target="_blank">View Tweet</a>
+                        <a href="{{ url_for('doc_details', id=item.id, search_id=search_id, t_url=item.tweet_url) }}" 
+                           class="btn btn-sm btn-red">
+                            View Details
+                        </a>
                     </div>
                 </div>
             {% endfor %}

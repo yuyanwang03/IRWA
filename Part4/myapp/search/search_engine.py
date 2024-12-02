@@ -21,6 +21,7 @@ class SearchEngine:
         self.documents = list(corpus.values())
         self.tokenized_tweets = [doc.content.split() for doc in self.documents]
         self.data = data
+        self.search_results = {}
 
     # Helper function from previous part
     def _build_terms(self, line):
@@ -139,16 +140,14 @@ class SearchEngine:
 
         for idx in top_indices:
             doc = self.documents[idx]
-
             original_doc = next((original_tweet for original_tweet in self.data if original_tweet['id'] == doc.id), None)
-            print(original_doc['user']['displayname'])
 
             results.append(ResultItem(
                 id=doc.id,
                 content=doc.content if original_doc is None else original_doc['content'],
                 hashtags=doc.hashtags,
                 url=f"doc_details?id={doc.id}&search_id={search_id}",
-                # url=doc.url,
+                tweet_url=doc.url, # Original link
                 ranking=scores[idx],
                 date=self._format_datetime((doc.date)),
                 likes=doc.likes,
@@ -157,4 +156,12 @@ class SearchEngine:
                 user_name=None if original_doc is None else original_doc['user']['displayname'],
                 user_id=None if original_doc is None else original_doc['user']['id']
             ))
+        
+        self.search_results[search_id] = results
+
         return results
+    
+    def get_results_by_id(self, search_id):
+        # Retrieve results by search_id
+        return self.search_results.get(search_id, [])
+    

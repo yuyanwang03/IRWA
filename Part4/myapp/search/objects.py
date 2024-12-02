@@ -30,11 +30,12 @@ class ResultItem:
     """
     Represents a search result.
     """
-    def __init__(self, id, content, hashtags, url, ranking, date, likes, retweets, lang=None, user_name=None, user_id=None):
+    def __init__(self, id, content, hashtags, url, tweet_url, ranking, date, likes, retweets, lang=None, user_name=None, user_id=None):
         self.id = id
         self.content = content
         self.hashtags = hashtags
         self.url = url
+        self.tweet_url = tweet_url
         self.ranking = ranking
         self.date = date
         self.likes = likes

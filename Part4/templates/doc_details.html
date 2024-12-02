@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block page_title %}Document Details{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <h1 class="mb-4 text-center">Document Details</h1>
+    <div class="card shadow-sm border-0">
+        <div class="card-header text-white" style="background-color: #850a1e;">
+            <h3 class="card-title mb-0">Document: "{{ document.id }}"</h3>
+        </div>
+        <div class="card-body" style="border: 2px solid #850a1e;">
+            <h5 class="text-secondary mb-3">General Information</h5>
+            <dl class="row">
+                <dt class="col-sm-4">Content</dt>
+                <dd class="col-sm-8 text-muted">{{ document.content }}</dd>
+
+                <dt class="col-sm-4">Date</dt>
+                <dd class="col-sm-8 text-muted">{{ document.date }}</dd>
+
+                <dt class="col-sm-4">Likes</dt>
+                <dd class="col-sm-8 text-muted">{{ document.likes }}</dd>
+
+                <dt class="col-sm-4">Retweets</dt>
+                <dd class="col-sm-8 text-muted">{{ document.retweets }}</dd>
+
+                <dt class="col-sm-4">Hashtags</dt>
+                <dd class="col-sm-8 text-muted">{{ document.hashtags }}</dd>
+
+                <dt class="col-sm-4">Language</dt>
+                <dd class="col-sm-8 text-muted">{{ document.language[0] }}</dd>
+
+                {% if original and original.outlinks %}
+                <dt class="col-sm-4">Outlinks</dt>
+                <dd class="col-sm-8 text-muted">{{ original.outlinks }}</dd>
+                {% endif %}
+            </dl>
+
+            {% if original %}
+            <hr>
+            <h5 class="text-secondary mb-3">User Details</h5>
+            <dl class="row">
+                <dt class="col-sm-4">Rendered Content</dt>
+                <dd class="col-sm-8 text-muted">{{ original.renderedContent }}</dd>
+
+                <dt class="col-sm-4">User</dt>
+                <dd class="col-sm-8 text-muted">{{ original.user.displayname }}</dd>
+
+                <dt class="col-sm-4">User ID</dt>
+                <dd class="col-sm-8 text-muted">@{{ original.user.username }}; {{ original.user.id }}</dd>
+
+                <dt class="col-sm-4">Followers</dt>
+                <dd class="col-sm-8 text-muted">{{ original.user.followersCount }}</dd>
+
+                <dt class="col-sm-4">Friends</dt>
+                <dd class="col-sm-8 text-muted">{{ original.user.friendsCount }}</dd>
+
+                <dt class="col-sm-4">Location</dt>
+                <dd class="col-sm-8 text-muted">{{ original.user.location }} {{ search_id }}</dd>
+
+                <dt class="col-sm-4">Description</dt>
+                <dd class="col-sm-8 text-muted">{{ original.user.description }}</dd>
+            </dl>
+            {% endif %}
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center" style="background-color: #850a1e;">
+            <a href="{{ url_for('search_form', search_id=search_id) }}" 
+               class="btn text-white" 
+               style="background-color: #850a1e; border: none;">
+               Back to Search
+            </a>
+            <a href="{{ document.tweet_url }}" class="btn btn-light" target="_blank">View Original Tweet</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
