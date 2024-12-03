@@ -12,7 +12,7 @@
     <p>Found <strong>{{ found_counter }}</strong> results for "<em>{{ query }}</em>"</p>
     <hr>
 
-    {% if results_list %}
+    {% if (results_list) and (found_counter > 0) %}
         <div class="list-group">
             {% for item in results_list %}
                 <div class="list-group-item mb-3 p-3 border rounded shadow-sm">
