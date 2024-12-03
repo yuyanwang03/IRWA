@@ -7,28 +7,62 @@
     <h1 class="mb-4 text-center">Document Details</h1>
     <div class="card shadow-sm border-0">
         <div class="card-header text-white" style="background-color: #850a1e;">
-            <h3 class="card-title mb-0">Document: "{{ document.id }}"</h3>
+            {% if document %}
+                <h3 class="card-title mb-0">Tweet: "{{ document.id }}"</h3>
+            {% endif %}
+            {% if (not document) and original %}
+            <h3 class="card-title mb-0">Tweet: "{{ original.id }}"</h3>
+            {% endif %}
         </div>
         <div class="card-body" style="border: 2px solid #850a1e;">
             <h5 class="text-secondary mb-3">General Information</h5>
             <dl class="row">
-                <dt class="col-sm-4">Content</dt>
-                <dd class="col-sm-8 text-muted">{{ document.content }}</dd>
+                {% if document %}
+                    <dt class="col-sm-4">Content</dt>
+                    <dd class="col-sm-8 text-muted">{{ document.content }}</dd>
 
-                <dt class="col-sm-4">Date</dt>
-                <dd class="col-sm-8 text-muted">{{ document.date }}</dd>
+                    <dt class="col-sm-4">Date</dt>
+                    <dd class="col-sm-8 text-muted">{{ document.date }}</dd>
 
-                <dt class="col-sm-4">Likes</dt>
-                <dd class="col-sm-8 text-muted">{{ document.likes }}</dd>
+                    <dt class="col-sm-4">Likes</dt>
+                    <dd class="col-sm-8 text-muted">{{ document.likes }}</dd>
 
-                <dt class="col-sm-4">Retweets</dt>
-                <dd class="col-sm-8 text-muted">{{ document.retweets }}</dd>
+                    <dt class="col-sm-4">Retweets</dt>
+                    <dd class="col-sm-8 text-muted">{{ document.retweets }}</dd>
 
-                <dt class="col-sm-4">Hashtags</dt>
-                <dd class="col-sm-8 text-muted">{{ document.hashtags }}</dd>
+                    <dt class="col-sm-4">Hashtags</dt>
+                    <dd class="col-sm-8 text-muted">{{ document.hashtags }}</dd>
+                {% endif %}
 
-                <dt class="col-sm-4">Language</dt>
-                <dd class="col-sm-8 text-muted">{{ document.language[0] }}</dd>
+                {% if (not document) and original %}
+                    <dt class="col-sm-4">Content</dt>
+                    <dd class="col-sm-8 text-muted">{{ original.content }}</dd>
+
+                    <dt class="col-sm-4">Date</dt>
+                    <dd class="col-sm-8 text-muted">{{ original.date }}</dd>
+
+                    <dt class="col-sm-4">Likes</dt>
+                    <dd class="col-sm-8 text-muted">{{ original.likeCount }}</dd>
+
+                    <dt class="col-sm-4">Retweets</dt>
+                    <dd class="col-sm-8 text-muted">{{ original.retweetCount }}</dd>
+
+                    <dt class="col-sm-4">Mentioned Users</dt>
+                    <dd class="col-sm-8 text-muted">
+                        {% if original.mentionedUsers %}
+                            {% for user in original.mentionedUsers %}
+                                @{{ user.displayname }}{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            No mentioned users.
+                        {% endif %}
+                    </dd>
+                {% endif %}
+
+                {% if document.language %}
+                    <dt class="col-sm-4">Language</dt>
+                    <dd class="col-sm-8 text-muted">{{ document.language[0] }}</dd>
+                {% endif %}
 
                 {% if original and original.outlinks %}
                 <dt class="col-sm-4">Outlinks</dt>

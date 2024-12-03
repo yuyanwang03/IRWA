@@ -5,7 +5,8 @@ from flask import Flask, render_template, session, request
 from myapp.search.search_engine import SearchEngine
 from myapp.search.load_corpus import load_corpus
 from json import JSONEncoder
-import json
+import json, jsonify
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -46,6 +47,42 @@ DATA = load_valid_json('./static/farmers-protest-tweets.json')
 # Instantiate search engine
 search_engine = SearchEngine(corpus=corpus, data=DATA)
 
+@app.before_request
+def track_request():
+    # Initialize analytics data in the session if not present
+    if 'analytics' not in session:
+        session['analytics'] = {
+            'requests': [],
+            'queries': [],
+            'clicks': [],
+            'documents': [],
+            'user_context': [],
+        }
+    
+    # Log request data
+    request_data = {
+        "endpoint": request.path,
+        "http_method": request.method,
+        "timestamp": datetime.now().isoformat(),
+        "ip_address": request.remote_addr,
+    }
+    session['analytics']['requests'].append(request_data)
+    # session.modified = True  # Mark session as modified
+
+@app.route('/log_document_click', methods=['POST'])
+def log_document_click():
+    data = request.json
+    document_click_data = {
+        "document_id": data.get("document_id"),
+        "query_id": data.get("query_id"),
+        "rank": data.get("rank"),
+        "timestamp": datetime.now().isoformat(),
+    }
+    session['analytics']['clicks'].append(document_click_data)
+    # session.modified = True
+    print("HERE ", session['analytics']['clicks'])
+    return jsonify({"status": "success"}), 200
+
 # Home URL "/"
 @app.route('/')
 def index():
@@ -71,6 +108,17 @@ def search_form():
 
         search_id = str(uuid.uuid4())  # Generate a unique identifier
         results = search_engine.search(search_query, search_id, top_n=20)
+
+        # Log query analytics
+        query_data = {
+            "query_id": search_id,
+            "query_text": search_query,
+            "term_count": len(search_query.split()),
+            "timestamp": datetime.now().isoformat(),
+            "num_result": len(results)
+        }
+        session['analytics']['queries'].append(query_data)
+        # session.modified = True
 
         if results:
             found_count = len(results)
