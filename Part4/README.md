@@ -2,7 +2,7 @@
 
 This is the implementation of a search engine with analytics for IRWA (Information Retrieval and Web Analytics). It includes session tracking, user analytics, and an interactive dashboard.
 
-[!NOTE]
+**IMPORTANT**
 You must have the JSON file with the original tweets info located in the folder: `static/farmers-protest-tweets.json`
 The program will throw an error if the file is missing!
 
@@ -29,6 +29,8 @@ You could then open the application in your browser at: http://127.0.0.1:8088
 ## Demo Video
 
 Below is a 30-second demo showcasing the search engine and analytics functionality:
+
+You can go to `./static/demo.mp4` to download the demo video as well.
 
 <video width="640" height="360" controls>
   <source src="./static/demo.mp4" type="video/mp4">
