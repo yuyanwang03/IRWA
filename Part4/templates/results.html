@@ -86,24 +86,6 @@
                   .catch(error => console.error('Error logging document click:', error));
             });
         });
-
-        // Calculate dwell time when the user returns to the results page
-        window.addEventListener('focus', () => {
-            if (clickTimestamp) {
-                const dwellTime = Date.now() - clickTimestamp;
-                fetch('/log_dwell_time', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        query_id: "{{ search_id }}",
-                        dwell_time: dwellTime
-                    })
-                }).then(response => response.json())
-                  .then(data => console.log(data))
-                  .catch(error => console.error('Error logging dwell time:', error));
-                clickTimestamp = null; // Reset the timestamp
-            }
-        });
     });
 </script>
 {% endblock %}

@@ -29,16 +29,17 @@ app.session_cookie_name = 'IRWA_SEARCH_ENGINE'
 
 session = {
     'session_id': str(uuid.uuid4()),
+    'user_context': None,
+    'duration': None,
     'analytics': {
         'requests': [],
         'queries': [],
-        'clicks': [],
-        'user_context': [],
+        'clicks': []
     },
     'last_search_query': None,
     'last_found_count': 0,
     'search_id': None,
-    'documents': {},
+    'last_query_documents': {},
     'last_activity': None,
 }
 
@@ -96,9 +97,11 @@ def save_session_to_file():
 
         # Check if session["analytics"] contains any non-empty lists
         analytics = session.get("analytics", {})
-        if not any(analytics.get(key, []) for key in ["requests", "queries", "clicks", "documents", "user_context"]):
+        if not any(analytics.get(key, []) for key in ["requests", "queries", "clicks"]):
             # print("No data to save in analytics. Skipping session save.")
             return  # Skip saving if analytics is empty
+        
+        session['duration'] = (datetime.now() - datetime.fromisoformat(session['user_context']['timestamp'])).total_seconds()
 
         # Define file path using session_id
         session_path = os.path.join(SESSION_DIRECTORY, f"{session['session_id']}.json")
@@ -134,16 +137,6 @@ def track_physical_session():
 
 @app.before_request
 def track_request():
-    # Initialize analytics data in the session if not present
-    if 'analytics' not in session:
-        session['analytics'] = {
-            'requests': [],
-            'queries': [],
-            'clicks': [],
-            'documents': [],
-            'user_context': [],
-        }
-    
     # Log request data
     request_data = {
         "endpoint": request.path,
@@ -153,29 +146,28 @@ def track_request():
     }
     session['analytics']['requests'].append(request_data)
 
-    # Get User-Agent and IP information
-    user_agent = request.headers.get('User-Agent')
-    agent = httpagentparser.detect(user_agent)
-    user_ip = request.remote_addr
+    if session['user_context'] is None:
+        # Get User-Agent and IP information
+        user_agent = request.headers.get('User-Agent')
+        agent = httpagentparser.detect(user_agent)
+        user_ip = request.remote_addr
 
-    # Optional: Use GeoIP to get location details (city, country)
-    city, country = get_geolocation(user_ip)
+        # Use GeoIP to get location details (city, country)
+        city, country = get_geolocation(user_ip)
 
-    # Prepare user context data
-    user_context = {
-        "browser": agent.get('browser', {}).get('name', 'Unknown'),
-        "os": agent.get('os', {}).get('name', 'Unknown'),
-        "device": agent.get('dist', {}).get('name', 'Unknown'),
-        "ip_address": user_ip,
-        "timestamp": datetime.now().isoformat(),
-        "time_of_day": datetime.now().strftime("%H:%M:%S"),
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "city": city,
-        "country": country
-    }
+        user_context = {
+            "browser": agent.get('browser', {}).get('name', 'Unknown'),
+            "os": agent.get('os', {}).get('name', 'Unknown'),
+            "device": agent.get('dist', {}).get('name', 'Unknown'),
+            "ip_address": user_ip,
+            "timestamp": datetime.now().isoformat(),
+            "time_of_day": datetime.now().strftime("%H:%M:%S"),
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "city": city,
+            "country": country
+        }
 
-    # Store user context in analytics
-    session['analytics']['user_context'].append(user_context)
+        session['user_context'] = user_context
 
 
 @app.route('/log_document_click', methods=['POST'])
@@ -188,17 +180,6 @@ def log_document_click():
         "timestamp": datetime.now().isoformat(),
     }
     session['analytics']['clicks'].append(document_click_data)
-    return jsonify({"status": "success"}), 200
-
-@app.route('/log_dwell_time', methods=['POST'])
-def log_dwell_time():
-    data = request.json
-    dwell_time_data = {
-        "query_id": data.get("query_id"),
-        "dwell_time": data.get("dwell_time"),
-        "timestamp": datetime.now().isoformat()
-    }
-    session['analytics']['documents'].append(dwell_time_data)
     return jsonify({"status": "success"}), 200
 
 # Home URL "/"
@@ -263,10 +244,10 @@ def search_form():
             session['last_found_count'] = found_count
             session['search_id'] = search_id  # Save search_id to session for later use
             # Serialize the results for session storage
-            session['documents'] = {str(doc.id): doc.__dict__ for doc in results}
+            session['last_query_documents'] = {str(doc.id): doc.__dict__ for doc in results}
         else:
             found_count = 0  # Handle no results scenario
-            session['documents'] = {}
+            session['last_query_documents'] = {}
 
         return render_template('results.html', query=search_query, results_list=results, page_title="Results", found_counter=found_count, search_id=search_id)
 
@@ -286,7 +267,7 @@ def doc_details():
 
     # Retrieve the original document from the data source
     original_doc = next((tweet for tweet in DATA if tweet['id'] == int(doc_id)), None)
-    document = next((doc for doc in session.get('documents', {}).values() if str(doc['id']) == doc_id), None)
+    document = next((doc for doc in session.get('last_query_documents', {}).values() if str(doc['id']) == doc_id), None)
 
     if doc_id:
         return render_template("doc_details.html", search_id=search_id, doc_id=doc_id, original=original_doc, document=document)
