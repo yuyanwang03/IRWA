@@ -4,6 +4,8 @@ This is the implementation of a search engine with analytics for IRWA (Informati
 
 [!CAUTION]
 You must have the JSON file with the original tweets info located in the folder: `static/farmers-protest-tweets.json`
+
+[!NOTE]
 The program will throw an error if the file is missing!
 
 ## How to run it
@@ -31,6 +33,7 @@ You could then open the application in your browser at: http://127.0.0.1:8088
 Below is a 30-second demo showcasing the search engine and analytics functionality:
 
 <video width="640" height="360" controls>
-  <source src="static/demo.mov" type="video/mp4">
+  <source src="static/demo.mov" type="video/quicktime">
   Your browser does not support the video tag.
 </video>
+
