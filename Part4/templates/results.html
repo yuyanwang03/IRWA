@@ -17,7 +17,8 @@
             {% for item in results_list %}
                 <div class="list-group-item mb-3 p-3 border rounded shadow-sm">
                     <h5 class="doc-title mb-1">
-                        <a href="{{ item.url }}" target="_blank" class="text-primary">
+                        <a href="{{ url_for('doc_details', id=item.id, search_id=search_id, t_url=item.tweet_url) }}" class="text-primary result-link"
+                        data-document-id="{{ item.id }}" data-query-id="{{ search_id }}" data-rank="{{ loop.index }}">
                             {{ item.content[:50] }}... <!-- Title from a substring -->
                         </a>
                     </h5>
@@ -37,7 +38,7 @@
                     </div>
                     <div>
                         <a href="{{ url_for('doc_details', id=item.id, search_id=search_id, t_url=item.tweet_url) }}" 
-                           class="btn btn-sm btn-red">
+                           class="btn btn-sm btn-red result-link" data-document-id="{{ item.id }}" data-query-id="{{ search_id }}" data-rank="{{ loop.index }}">
                             View Details
                         </a>
                     </div>
@@ -55,6 +56,56 @@
         </ul>
     </nav>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // console.log("Processed");
+        let clickTimestamp;
+
+        // Add click event listeners to all result links
+        document.querySelectorAll('.result-link').forEach(link => {
+            link.addEventListener('click', event => {
+                // console.log("Link clicked");
+                clickTimestamp = Date.now();
+
+                const documentId = link.dataset.documentId;
+                const queryId = link.dataset.queryId;
+                const rank = link.dataset.rank;
+
+                // Log the document click to the backend
+                fetch('/log_document_click', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        document_id: documentId,
+                        query_id: queryId,
+                        rank: rank
+                    })
+                }).then(response => response.json())
+                  .then(data => console.log(data))
+                  .catch(error => console.error('Error logging document click:', error));
+            });
+        });
+
+        // Calculate dwell time when the user returns to the results page
+        window.addEventListener('focus', () => {
+            if (clickTimestamp) {
+                const dwellTime = Date.now() - clickTimestamp;
+                fetch('/log_dwell_time', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query_id: "{{ search_id }}",
+                        dwell_time: dwellTime
+                    })
+                }).then(response => response.json())
+                  .then(data => console.log(data))
+                  .catch(error => console.error('Error logging dwell time:', error));
+                clickTimestamp = null; // Reset the timestamp
+            }
+        });
+    });
+</script>
 {% endblock %}
 
 
