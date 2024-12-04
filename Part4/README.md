@@ -32,3 +32,4 @@ Below is a 30-second demo showcasing the search engine and analytics functionali
 
 ![Alt Text](https://github.com/yuyanwang03/IRWA/blob/main/Part4/static/demo.gif)
 
+<img src="https://github.com/yuyanwang03/IRWA/blob/main/Part4/static/demo.gif" width="640" height="360"/>
