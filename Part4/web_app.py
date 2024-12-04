@@ -13,19 +13,91 @@ import requests
 from datetime import timedelta
 from difflib import SequenceMatcher
 
+# -----------------------------------------------
+# Configuration and Constants
+# -----------------------------------------------
 SESSION_TIMEOUT = timedelta(minutes=60)
-
+SESSION_DIRECTORY = './flask_sessions'
 app = Flask(__name__)
 
-# *** Enable using to_json in objects ***
+app.secret_key = 'afgsreg86sr897b6st8b76va8er76fcs6g8d7'
+app.session_cookie_name = 'IRWA_SEARCH_ENGINE'
+
+# -----------------------------------------------
+# Utility Functions
+# -----------------------------------------------
+
 def _default(self, obj):
+    """Enable using to_json in objects."""
     return getattr(obj.__class__, "to_json", _default.default)(obj)
+
+def get_geolocation(ip):
+    """Fetch city and country for an IP address using ip-api."""
+    try:
+        response = requests.get(f"http://ip-api.com/json/{ip}")
+        if response.status_code == 200:
+            data = response.json()
+            return data.get("city", "Unknown"), data.get("country", "Unknown")
+    except Exception as e:
+        print(f"Error fetching geolocation: {e}")
+    return "Unknown", "Unknown"
+
+def is_similar(query1, query2, threshold=0.5):
+    """Check if two queries are similar using SequenceMatcher."""
+    similarity = SequenceMatcher(None, query1, query2).ratio()
+    return similarity >= threshold
+
+def load_valid_json(file_path):
+    """Load valid JSON entries from a file."""
+    valid_entries = []
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line_number, line in enumerate(file, start=1):
+            try:
+                json_entry = json.loads(line.strip())
+                valid_entries.append(json_entry)
+            except json.JSONDecodeError:
+                # print(f"Skipping invalid JSON entry on line {line_number}: {line.strip()}")
+                pass
+    return valid_entries
+
+def save_session_to_file():
+    """Save session data to a unique file identified by session_id."""
+    try:
+        if 'session_id' not in session:
+            session['session_id'] = str(uuid.uuid4())
+
+        analytics = session.get("analytics", {})
+        if not any(analytics.get(key, []) for key in ["requests", "queries", "clicks"]):
+            return  # Skip saving if analytics is empty
+
+        session['duration'] = (datetime.now() - datetime.fromisoformat(session['user_context']['timestamp'])).total_seconds()
+
+        session_path = os.path.join(SESSION_DIRECTORY, f"{session['session_id']}.json")
+        with open(session_path, 'w', encoding='utf-8') as file:
+            json.dump(session, file, indent=4)
+        print(f"Session data saved to {session_path}")
+    except Exception as e:
+        print(f"Error saving session data: {e}")
+
+# -----------------------------------------------
+# Application Initialization
+# -----------------------------------------------
 
 _default.default = JSONEncoder().default
 JSONEncoder.default = _default
 
-app.secret_key = 'afgsreg86sr897b6st8b76va8er76fcs6g8d7'
-app.session_cookie_name = 'IRWA_SEARCH_ENGINE'
+# Load Corpus and Data
+full_path = os.path.realpath(__file__)  # Get current path
+path, filename = os.path.split(full_path)
+file_path = os.path.join(path, "./static/processed_data.csv")  
+corpus = load_corpus(file_path)
+DATA = load_valid_json('./static/farmers-protest-tweets.json')
+
+# Instantiate search engine
+search_engine = SearchEngine(corpus=corpus, data=DATA)
+os.makedirs(SESSION_DIRECTORY, exist_ok=True)
+
+atexit.register(save_session_to_file)
 
 session = {
     'session_id': str(uuid.uuid4()),
@@ -43,78 +115,9 @@ session = {
     'last_activity': None,
 }
 
-# Load corpus from CSV
-full_path = os.path.realpath(__file__)  # Get current path
-path, filename = os.path.split(full_path)
-
-file_path = os.path.join(path, "./static/processed_data.csv")  
-print(f"File path: {file_path}")
-
-corpus = load_corpus(file_path)
-
-def get_geolocation(ip):
-    try:
-        # Use a free service like ip-api.com
-        response = requests.get(f"http://ip-api.com/json/{ip}")
-        if response.status_code == 200:
-            data = response.json()
-            return data.get("city", "Unknown"), data.get("country", "Unknown")
-    except Exception as e:
-        print(f"Error fetching geolocation: {e}")
-    return "Unknown", "Unknown"
-
-def is_similar(query1, query2, threshold=0.5):
-    """Check if two queries are similar using SequenceMatcher."""
-    similarity = SequenceMatcher(None, query1, query2).ratio()
-    return similarity >= threshold
-
-def load_valid_json(file_path):
-    valid_entries = []
-    with open(file_path, 'r', encoding='utf-8') as file:
-        for line_number, line in enumerate(file, start=1):
-            try:
-                json_entry = json.loads(line.strip())
-                valid_entries.append(json_entry)
-            except json.JSONDecodeError:
-                # print(f"Skipping invalid JSON entry on line {line_number}: {line.strip()}")
-                pass
-    return valid_entries
-
-DATA = load_valid_json('./static/farmers-protest-tweets.json')
-
-# Instantiate search engine
-search_engine = SearchEngine(corpus=corpus, data=DATA)
-
-# Directory to store session files
-SESSION_DIRECTORY = './flask_sessions'
-os.makedirs(SESSION_DIRECTORY, exist_ok=True)
-def save_session_to_file():
-    """Save session data to a unique file identified by session_id."""
-    try:
-        # Ensure session has a unique ID
-        if 'session_id' not in session:
-            session['session_id'] = str(uuid.uuid4())
-
-        # Check if session["analytics"] contains any non-empty lists
-        analytics = session.get("analytics", {})
-        if not any(analytics.get(key, []) for key in ["requests", "queries", "clicks"]):
-            # print("No data to save in analytics. Skipping session save.")
-            return  # Skip saving if analytics is empty
-        
-        session['duration'] = (datetime.now() - datetime.fromisoformat(session['user_context']['timestamp'])).total_seconds()
-
-        # Define file path using session_id
-        session_path = os.path.join(SESSION_DIRECTORY, f"{session['session_id']}.json")
-
-        # Save session data to the file
-        with open(session_path, 'w', encoding='utf-8') as file:
-            json.dump(session, file, indent=4)
-
-        print(f"Session data saved to {session_path}")
-    except Exception as e:
-        print(f"Error saving session data: {e}")
-
-atexit.register(save_session_to_file)
+# -----------------------------------------------
+# Middleware: Tracking and Session Management
+# -----------------------------------------------
 
 @app.before_request
 def track_physical_session():
@@ -169,7 +172,6 @@ def track_request():
 
         session['user_context'] = user_context
 
-
 @app.route('/log_document_click', methods=['POST'])
 def log_document_click():
     data = request.json
@@ -182,19 +184,13 @@ def log_document_click():
     session['analytics']['clicks'].append(document_click_data)
     return jsonify({"status": "success"}), 200
 
-# Home URL "/"
+# -----------------------------------------------
+# Routes
+# -----------------------------------------------
+
 @app.route('/')
 def index():
-    print("Starting home URL /...")
-
-    user_agent = request.headers.get('User-Agent')
-    print("Raw user browser:", user_agent)
-
-    user_ip = request.remote_addr
-    agent = httpagentparser.detect(user_agent)
-    print(f"Remote IP: {user_ip} - JSON user browser {agent}")
-    # print(session)
-
+    """Render the homepage."""
     return render_template('index.html', page_title="Welcome")
 
 @app.route('/search', methods=['GET', 'POST'])
@@ -205,7 +201,7 @@ def search_form():
         session['last_search_query'] = search_query
 
         search_id = str(uuid.uuid4())  # Generate a unique identifier
-        results = search_engine.search(search_query, search_id, top_n=20)
+        results = search_engine.search(search_query, search_id, top_n=40)
 
         # Log query analytics
         query_data = {
@@ -283,6 +279,10 @@ def analytics_dashboard():
     total_documents = len(analytics.get('documents', []))
 
     return render_template('analytics.html', total_requests=total_requests, total_queries=total_queries, total_clicks=total_clicks, total_documents=total_documents)
+
+# -----------------------------------------------
+# Run the Application
+# -----------------------------------------------
 
 if __name__ == "__main__":
     app.run(port=8088, host="0.0.0.0", threaded=False, debug=True)
