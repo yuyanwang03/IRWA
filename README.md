@@ -70,3 +70,34 @@
         │   └── supportfarmer.png 
         └── project3.ipynb
         ```
+    
+    * [Part 4](./Part4/README.md):
+        ```
+        Part4/
+        ├── flask_sessions/              # Session storage directory (we recommend put this in .gitignore)
+        ├── myapp/
+        │   ├── core/
+        │   │   └── utils.py             # Core utility functions
+        │   ├── search/
+        │   │   ├── load_corpus.py       # Script to load the corpus
+        │   │   ├── objects.py           # Data model definitions
+        │   │   └── search_engine.py     # Search engine implementation
+        ├── static/
+        │   ├── styles/
+        │   │   ├── bootstrap.min.css    # Bootstrap styles
+        │   │   ├── bootstrap.min.css.map # Bootstrap map file
+        │   │   └── custom.css           # Custom styles for the application
+        │   ├── farmers-protest-tweets.json  # Dataset used in the search engine
+        │   │                                # IMPORTANT: this file is not uploaded in github, you should have it locally; 
+        │   ├── logo.png                 # Project logo
+        │   └── processed_data.csv       # Preprocessed data file
+        ├── templates/
+        │   ├── all_sessions.html        # HTML for all sessions analytics
+        │   ├── analytics.html           # HTML for general analytics
+        │   ├── base.html                # Base layout for templates
+        │   ├── doc_details.html         # Document details page
+        │   ├── index.html               # Homepage template
+        │   └── results.html             # Search results page
+        ├── README.md                    # This README file
+        └── web_app.py                   # Main Flask application
+        ```
