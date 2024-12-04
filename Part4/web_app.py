@@ -108,11 +108,12 @@ session = {
         'queries': [],
         'clicks': []
     },
+    'missions': [],
     'last_search_query': None,
     'last_found_count': 0,
     'search_id': None,
     'last_query_documents': {},
-    'last_activity': None,
+    'last_activity': None
 }
 
 # -----------------------------------------------
@@ -272,14 +273,42 @@ def doc_details():
 
 @app.route('/analytics', methods=['GET'])
 def analytics_dashboard():
+    """Render the analytics dashboard with usage statistics."""
     analytics = session.get('analytics', {})
+    
+    # Metrics
     total_requests = len(analytics.get('requests', []))
     total_queries = len(analytics.get('queries', []))
     total_clicks = len(analytics.get('clicks', []))
-    total_documents = len(analytics.get('documents', []))
+    average_query_length = (
+        sum(len(q['query_text'].split()) for q in analytics.get('queries', [])) / total_queries
+        if total_queries > 0 else 0
+    )
 
-    return render_template('analytics.html', total_requests=total_requests, total_queries=total_queries, total_clicks=total_clicks, total_documents=total_documents)
+    # Aggregate frequent queries
+    query_frequency = {}
+    for q in analytics.get('queries', []):
+        query_frequency[q['query_text']] = query_frequency.get(q['query_text'], 0) + 1
+    most_frequent_queries = sorted(query_frequency.items(), key=lambda x: x[1], reverse=True)[:10]
 
+    # Data for graphs
+    queries_over_time = [q['timestamp'] for q in analytics.get('queries', [])]
+    clicks_per_document = {}
+    for click in analytics.get('clicks', []):
+        doc_id = click['document_id']
+        clicks_per_document[doc_id] = clicks_per_document.get(doc_id, 0) + 1
+    clicks_per_document = sorted(clicks_per_document.items(), key=lambda x: x[1], reverse=True)
+
+    return render_template(
+        'analytics.html',
+        total_requests=total_requests,
+        total_queries=total_queries,
+        total_clicks=total_clicks,
+        average_query_length=average_query_length,
+        most_frequent_queries=most_frequent_queries,
+        queries_over_time=queries_over_time,
+        clicks_per_document=clicks_per_document
+    )
 # -----------------------------------------------
 # Run the Application
 # -----------------------------------------------

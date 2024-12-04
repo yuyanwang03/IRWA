@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block page_title %}Analytics Dashboard{% endblock %}
+
+{% block content %}
+<div>
+    <a href="{{ url_for('index') }}" class="btn btn-primary">
+        Back to Home
+    </a>
+</div>
+
+<h1 class="text-center mb-4">Analytics Dashboard</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Key Metrics</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Total Requests: {{ total_requests }}</li>
+            <li class="list-group-item">Total Queries: {{ total_queries }}</li>
+            <li class="list-group-item">Total Clicks: {{ total_clicks }}</li>
+            <li class="list-group-item">Average Query Length: {{ average_query_length }}</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2>Most Frequent Queries</h2>
+        <ul class="list-group">
+            {% for query, count in most_frequent_queries %}
+            <li class="list-group-item">{{ query }}: {{ count }} times</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<hr>
+
+<h2>Graphs</h2>
+<div class="row">
+    <div class="col-md-6">
+        <h3>Queries Over Time</h3>
+        <canvas id="queriesOverTimeChart"></canvas>
+    </div>
+    <div class="col-md-6">
+        <h3>Clicks Per Document</h3>
+        <canvas id="documentClicksChart"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Queries Over Time Chart
+    // Queries Over Time Chart
+    const queriesOverTime = {{ queries_over_time | tojson }};
+    const queriesOverTimeChartCtx = document.getElementById('queriesOverTimeChart').getContext('2d');
+    
+    // Extract timestamps and convert them to a readable format
+    const queryTimestamps = queriesOverTime.map(time => new Date(time).toLocaleString());
+    
+    new Chart(queriesOverTimeChartCtx, {
+        type: 'line',
+        data: {
+            labels: queryTimestamps, // Use formatted timestamps for the x-axis
+            datasets: [{
+                label: 'Queries Over Time',
+                data: queriesOverTime.map((_, index) => index + 1), // The y-axis values remain sequential
+                borderColor: 'blue',
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Timestamp'
+                    },
+                    ticks: {
+                        autoSkip: true, // Skip ticks if there are too many
+                        maxTicksLimit: 10 // Limit the number of x-axis labels
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Query Count'
+                    }
+                }
+            }
+        }
+    });
+
+    // Document Clicks Chart
+    const clicksPerDocument = {{ clicks_per_document | tojson }};
+    const documentClicksChartCtx = document.getElementById('documentClicksChart').getContext('2d');
+    new Chart(documentClicksChartCtx, {
+        type: 'bar',
+        data: {
+            labels: clicksPerDocument.map(([docId, _]) => docId),
+            datasets: [{
+                label: 'Clicks Per Document',
+                data: clicksPerDocument.map(([_, clicks]) => clicks),
+                backgroundColor: 'green'
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+</script>
+{% endblock %}
