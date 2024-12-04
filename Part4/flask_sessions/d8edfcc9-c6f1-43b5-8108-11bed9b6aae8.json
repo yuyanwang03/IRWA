@@ -1,0 +1,1287 @@
+{
+    "session_id": "d8edfcc9-c6f1-43b5-8108-11bed9b6aae8",
+    "user_context": {
+        "browser": "Chrome",
+        "os": "Macintosh",
+        "device": "Unknown",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2024-12-04T18:54:44.056012",
+        "time_of_day": "18:54:44",
+        "date": "2024-12-04",
+        "city": "Unknown",
+        "country": "Unknown"
+    },
+    "duration": 60.421138,
+    "analytics": {
+        "requests": [
+            {
+                "endpoint": "/",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:54:43.948372",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:54:44.086764",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:54:44.091108",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:54:44.092182",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:54:44.116222",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T18:55:04.037554",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:05.061389",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:05.063433",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:05.066083",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:05.149143",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/log_document_click",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T18:55:06.638408",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/doc_details",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:06.642354",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:06.739615",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:06.742923",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:06.744972",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:06.755500",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:08.278365",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:08.295011",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:08.298114",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:08.300987",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:08.326469",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:09.545437",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:09.558924",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:09.563696",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:09.565948",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:09.572528",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T18:55:18.836382",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:19.797806",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:19.801185",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:19.802421",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:19.843656",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/log_document_click",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T18:55:21.697783",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/doc_details",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:21.703907",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:21.779101",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:21.783429",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:21.786658",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:21.795647",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:23.202115",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:23.223173",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:23.225816",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:23.227800",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:23.245920",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/log_document_click",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T18:55:24.523450",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/doc_details",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:24.527055",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:24.600585",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:24.609783",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:24.613484",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:24.619089",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:26.313302",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:26.338733",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:26.340974",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:26.342367",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:26.367742",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:27.817901",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:27.837140",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:27.841437",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:27.843127",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:27.848731",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T18:55:30.865252",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:32.073483",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:32.076142",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:32.076914",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:32.091551",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/log_document_click",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T18:55:35.666127",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/doc_details",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:35.669288",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:35.747434",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:35.751456",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:35.753331",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:35.759453",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:37.086244",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:37.109207",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:37.111203",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:37.113427",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:37.129775",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/log_document_click",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T18:55:39.008459",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/doc_details",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:39.013430",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:39.082690",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:39.086130",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:39.088692",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:39.093678",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:40.260523",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:40.281297",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:40.283402",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:40.285426",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:40.307434",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:42.277632",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:42.297526",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:42.302693",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:42.305598",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css.map",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T18:55:42.314253",
+                "ip_address": "127.0.0.1"
+            }
+        ],
+        "queries": [
+            {
+                "query_id": "ce8426b5-c544-4bc8-9b12-de91dbb67836",
+                "query_text": "farmers rights",
+                "term_count": 2,
+                "timestamp": "2024-12-04T18:55:05.036500",
+                "num_result": 40
+            },
+            {
+                "query_id": "dedde8b1-f507-474f-a19b-b8ddfae34b21",
+                "query_text": "indian government rights",
+                "term_count": 3,
+                "timestamp": "2024-12-04T18:55:19.774942",
+                "num_result": 40
+            },
+            {
+                "query_id": "f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+                "query_text": "shame on modi",
+                "term_count": 3,
+                "timestamp": "2024-12-04T18:55:32.052167",
+                "num_result": 40
+            }
+        ],
+        "clicks": [
+            {
+                "document_id": "1361039121888796674",
+                "query_id": "ce8426b5-c544-4bc8-9b12-de91dbb67836",
+                "rank": "5",
+                "timestamp": "2024-12-04T18:55:06.638663"
+            },
+            {
+                "document_id": "1362838457672957957",
+                "query_id": "dedde8b1-f507-474f-a19b-b8ddfae34b21",
+                "rank": "14",
+                "timestamp": "2024-12-04T18:55:21.698032"
+            },
+            {
+                "document_id": "1361575038642626562",
+                "query_id": "dedde8b1-f507-474f-a19b-b8ddfae34b21",
+                "rank": "1",
+                "timestamp": "2024-12-04T18:55:24.523623"
+            },
+            {
+                "document_id": "1360599574323290113",
+                "query_id": "f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+                "rank": "3",
+                "timestamp": "2024-12-04T18:55:35.666312"
+            },
+            {
+                "document_id": "1361214219639611395",
+                "query_id": "f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+                "rank": "6",
+                "timestamp": "2024-12-04T18:55:39.008562"
+            }
+        ]
+    },
+    "last_search_query": "shame on modi",
+    "last_found_count": 40,
+    "search_id": "f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+    "last_query_documents": {
+        "1360965271339470854": {
+            "id": 1360965271339470854,
+            "content": "@waglenikhil #FarmersProtest\nModi has no SHAME !!! \ud83d\ude22 https://t.co/vcL9ZNPE2M",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360965271339470854&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/chouhan_jasmeet/status/1360965271339470854",
+            "ranking": 0.9865902276449019,
+            "date": "2021-02-14 14:53:00",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Jasmeet Singh Chouhan",
+            "user_id": 1095990994326220800
+        },
+        "1360811393910411274": {
+            "id": 1360811393910411274,
+            "content": "Shame on Modi\n#\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 \n#FarmersProtest https://t.co/lcx3AZ2m8O",
+            "hashtags": "#\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 #FarmersProtest",
+            "url": "doc_details?id=1360811393910411274&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/amannahel/status/1360811393910411274",
+            "ranking": 0.9865902276449019,
+            "date": "2021-02-14 04:41:33",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Amannahel",
+            "user_id": 1334067901188497408
+        },
+        "1360599574323290113": {
+            "id": 1360599574323290113,
+            "content": "Shame on Modi #FarmersProtest https://t.co/B6qqKE0JZ8",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360599574323290113&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/canadianfarmer4/status/1360599574323290113",
+            "ranking": 0.9865902276449019,
+            "date": "2021-02-13 14:39:51",
+            "likes": 11,
+            "retweets": 8,
+            "language": [
+                "english"
+            ],
+            "user_name": "Jkaur \ud83c\udde8\ud83c\udde6 #istandwithfarmers",
+            "user_id": 1334559824684732418
+        },
+        "1360869243877691394": {
+            "id": 1360869243877691394,
+            "content": "Shame on you Modi . #\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 #FarmersProtest https://t.co/vEJjB2xRkl",
+            "hashtags": "#\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 #FarmersProtest",
+            "url": "doc_details?id=1360869243877691394&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/KhabraSatinder/status/1360869243877691394",
+            "ranking": 0.9865902276449019,
+            "date": "2021-02-14 08:31:26",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "FreeDeepSidhu",
+            "user_id": 1332863722822406145
+        },
+        "1360812694325006336": {
+            "id": 1360812694325006336,
+            "content": "Shame on modi government\n#\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 \n#FarmersProtest https://t.co/9yO6tjPdkv",
+            "hashtags": "#\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 #FarmersProtest",
+            "url": "doc_details?id=1360812694325006336&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/amannahel/status/1360812694325006336",
+            "ranking": 0.8307083341289904,
+            "date": "2021-02-14 04:46:43",
+            "likes": 2,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Amannahel",
+            "user_id": 1334067901188497408
+        },
+        "1361214219639611395": {
+            "id": 1361214219639611395,
+            "content": "Shame on Modi\n#IndiaBeingSilenced \n#FarmersProtest https://t.co/MbM8dma3s7",
+            "hashtags": "#IndiaBeingSilenced #FarmersProtest",
+            "url": "doc_details?id=1361214219639611395&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/amannahel/status/1361214219639611395",
+            "ranking": 0.8184262651517595,
+            "date": "2021-02-15 07:22:14",
+            "likes": 3,
+            "retweets": 3,
+            "language": [
+                "english"
+            ],
+            "user_name": "Amannahel",
+            "user_id": 1334067901188497408
+        },
+        "1361298020478955521": {
+            "id": 1361298020478955521,
+            "content": "#FarmersProtest #IndiaBeingSilenced Shame on you Modi https://t.co/s44O3BiEaZ",
+            "hashtags": "#FarmersProtest #IndiaBeingSilenced",
+            "url": "doc_details?id=1361298020478955521&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/sukhpreetkgurna/status/1361298020478955521",
+            "ranking": 0.8184262651517595,
+            "date": "2021-02-15 12:55:14",
+            "likes": 0,
+            "retweets": 4,
+            "language": [
+                "english"
+            ],
+            "user_name": "Sukhpreet Kaur Gurna",
+            "user_id": 865045920764841985
+        },
+        "1361181380139388934": {
+            "id": 1361181380139388934,
+            "content": "#FarmersProtest shame on modi #IndiaBeingSilenced https://t.co/7rZE782G4y",
+            "hashtags": "#FarmersProtest #IndiaBeingSilenced",
+            "url": "doc_details?id=1361181380139388934&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/Be1Benipal/status/1361181380139388934",
+            "ranking": 0.8184262651517595,
+            "date": "2021-02-15 05:11:45",
+            "likes": 0,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Satinder Kaur Benipal",
+            "user_id": 1337965927669792772
+        },
+        "1361223195286765568": {
+            "id": 1361223195286765568,
+            "content": "#FarmersProtest shame Modi govt.. https://t.co/PCgfh2J2Nj",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361223195286765568&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/graak_sanju/status/1361223195286765568",
+            "ranking": 0.8166650565813498,
+            "date": "2021-02-15 07:57:54",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Sanju Graak",
+            "user_id": 1335468382511042561
+        },
+        "1360999848766545922": {
+            "id": 1360999848766545922,
+            "content": "Shame on this Modi and his govt. \n#FarmersProtest https://t.co/7pFVfry3Lw",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360999848766545922&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/ImMandeepk/status/1360999848766545922",
+            "ranking": 0.8166650565813498,
+            "date": "2021-02-14 17:10:24",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "MK",
+            "user_id": 1222942116487290881
+        },
+        "1360045840614576128": {
+            "id": 1360045840614576128,
+            "content": "#FarmersProtest\n#MahapanchayatRevolution shame on modi https://t.co/OiM5F9AoDk",
+            "hashtags": "#FarmersProtest #MahapanchayatRevolution",
+            "url": "doc_details?id=1360045840614576128&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/Justicefordeepa/status/1360045840614576128",
+            "ranking": 0.8133349523122092,
+            "date": "2021-02-12 01:59:31",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Sukh the Farmer",
+            "user_id": 2374037564
+        },
+        "1360429408994009088": {
+            "id": 1360429408994009088,
+            "content": "Shame on Modi\n#RepealOnlyWayAhead \n#FarmersProtest https://t.co/jUKMhhl7tO",
+            "hashtags": "#RepealOnlyWayAhead #FarmersProtest",
+            "url": "doc_details?id=1360429408994009088&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/amannahel/status/1360429408994009088",
+            "ranking": 0.8067925150608009,
+            "date": "2021-02-13 03:23:41",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Amannahel",
+            "user_id": 1334067901188497408
+        },
+        "1362882031248568320": {
+            "id": 1362882031248568320,
+            "content": "Shame on you Modi @KanganaTeam #StandWithFarmers \n#FarmersProtest https://t.co/Gem9mxGaVj",
+            "hashtags": "#StandWithFarmers #FarmersProtest",
+            "url": "doc_details?id=1362882031248568320&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/gurjantsinghaus/status/1362882031248568320",
+            "ranking": 0.7921271836886112,
+            "date": "2021-02-19 21:49:32",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Gurjant Singh Australia",
+            "user_id": 1357495890223587329
+        },
+        "1360920880243638273": {
+            "id": 1360920880243638273,
+            "content": "@DelhiPolice @HMOIndia @PMOIndia @narendramodi_in \n\nShame on you!  Shame on you!\n\n#FarmersProtest  #\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 https://t.co/4wwa3fHnat",
+            "hashtags": "#FarmersProtest #\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928",
+            "url": "doc_details?id=1360920880243638273&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/KattanOru/status/1360920880243638273",
+            "ranking": 0.7715740609292693,
+            "date": "2021-02-14 11:56:37",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "oru_kattan",
+            "user_id": 1238100988390567936
+        },
+        "1361900342963810305": {
+            "id": 1361900342963810305,
+            "content": "#FarmersProtest \nshame shame https://t.co/fE5osBGzsw",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361900342963810305&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/harjinder155/status/1361900342963810305",
+            "ranking": 0.7715740609292693,
+            "date": "2021-02-17 04:48:39",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Harjinder Singh Saini",
+            "user_id": 976919099589537792
+        },
+        "1360514584751132672": {
+            "id": 1360514584751132672,
+            "content": "Shame Modi - Shame BJP\n#FarmersProtest #SupportFarmers https://t.co/tQhHfUAr1k",
+            "hashtags": "#FarmersProtest #SupportFarmers",
+            "url": "doc_details?id=1360514584751132672&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/SainiNps/status/1360514584751132672",
+            "ranking": 0.7705953414055668,
+            "date": "2021-02-13 09:02:08",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "N P S (#Yes_I_am_andolanjeevi #I_Support_Farmers)",
+            "user_id": 1227214195692687360
+        },
+        "1360514916323495938": {
+            "id": 1360514916323495938,
+            "content": "Shame Modi - Shame BJP\n#FarmersProtest #SupportFarmers https://t.co/nZq6w0f1uT",
+            "hashtags": "#FarmersProtest #SupportFarmers",
+            "url": "doc_details?id=1360514916323495938&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/SainiNps/status/1360514916323495938",
+            "ranking": 0.7705953414055668,
+            "date": "2021-02-13 09:03:27",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "N P S (#Yes_I_am_andolanjeevi #I_Support_Farmers)",
+            "user_id": 1227214195692687360
+        },
+        "1360514650614337539": {
+            "id": 1360514650614337539,
+            "content": "Shame Modi - Shame BJP\n#FarmersProtest #SupportFarmers https://t.co/FGAMYv2Exw",
+            "hashtags": "#FarmersProtest #SupportFarmers",
+            "url": "doc_details?id=1360514650614337539&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/SainiNps/status/1360514650614337539",
+            "ranking": 0.7705953414055668,
+            "date": "2021-02-13 09:02:24",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "N P S (#Yes_I_am_andolanjeevi #I_Support_Farmers)",
+            "user_id": 1227214195692687360
+        },
+        "1362060018514755593": {
+            "id": 1362060018514755593,
+            "content": "Shame on you @ZeeNews  \n#FarmersProtest https://t.co/9IZ9EIe0jh",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1362060018514755593&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/itspreetsidhu/status/1362060018514755593",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-17 15:23:08",
+            "likes": 4,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Itspreetsidhu",
+            "user_id": 1221383221847310337
+        },
+        "1360827858378104839": {
+            "id": 1360827858378104839,
+            "content": "What a shame\n#FarmersProtest https://t.co/Eg6sR30vkU",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360827858378104839&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/Rimpy1995/status/1360827858378104839",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-14 05:46:59",
+            "likes": 3,
+            "retweets": 2,
+            "language": [
+                "english"
+            ],
+            "user_name": "Rimpy",
+            "user_id": 1333298459458244609
+        },
+        "1360983093956411397": {
+            "id": 1360983093956411397,
+            "content": "Shameful.\n#FarmersProtest https://t.co/IHwp3707Ps",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360983093956411397&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/Amardee49216846/status/1360983093956411397",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-14 16:03:50",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Amardeep Singh",
+            "user_id": 1335222700575346688
+        },
+        "1362788382108131328": {
+            "id": 1362788382108131328,
+            "content": "@Tractor2twitr @sachin_rt @sachin_rt has no shame! #FarmersProtest",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1362788382108131328&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/sursodhi/status/1362788382108131328",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-19 15:37:24",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Surinder Sodhi",
+            "user_id": 1334269457481383938
+        },
+        "1362831320351600641": {
+            "id": 1362831320351600641,
+            "content": "Shameful @cmohry \ud83d\udc4f\ud83d\udc4f\ud83d\udc4f\n#FarmersProtest https://t.co/UDQdoC3AWS",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1362831320351600641&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/virkgagan_/status/1362831320351600641",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-19 18:28:01",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Gagandeep Singh Virk",
+            "user_id": 1334447314803388418
+        },
+        "1361272975249473542": {
+            "id": 1361272975249473542,
+            "content": "Shameful \n\n#Farmersprotest https://t.co/Ke6tJgfDv5",
+            "hashtags": "#Farmersprotest",
+            "url": "doc_details?id=1361272975249473542&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/Jogi_hoya_jatt/status/1361272975249473542",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-15 11:15:43",
+            "likes": 2,
+            "retweets": 3,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\uddee\ud83c\uddf3 Sadhu Ghuman \ud83c\uddee\ud83c\uddf3",
+            "user_id": 1333659191249051648
+        },
+        "1364221335363346434": {
+            "id": 1364221335363346434,
+            "content": "#FarmersProtest \nShame https://t.co/nOnk0kTg9S",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1364221335363346434&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/Kisan99827701/status/1364221335363346434",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-23 14:31:27",
+            "likes": 0,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Kisan",
+            "user_id": 1354952766565789705
+        },
+        "1360998160013791235": {
+            "id": 1360998160013791235,
+            "content": "What a shame!\n#FarmersProtest https://t.co/owyosY0qus",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360998160013791235&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/BalvirS1313/status/1360998160013791235",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-14 17:03:42",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Balvir Singh",
+            "user_id": 1332812579379453952
+        },
+        "1364494437771051009": {
+            "id": 1364494437771051009,
+            "content": "@rohit_chahal Shame ! #FarmersProtest",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1364494437771051009&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/the_Chaudharys/status/1364494437771051009",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-24 08:36:39",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "#FarmersProtest",
+            "user_id": 85764090
+        },
+        "1360106689974857735": {
+            "id": 1360106689974857735,
+            "content": "Shame.\n#FarmersProtest https://t.co/Hmyf8D8wYc",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360106689974857735&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/_Simar_Mangat/status/1360106689974857735",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-12 06:01:19",
+            "likes": 9,
+            "retweets": 4,
+            "language": [
+                "english"
+            ],
+            "user_name": "Simar kaur Mangat",
+            "user_id": 1340709094089392128
+        },
+        "1361485053268738050": {
+            "id": 1361485053268738050,
+            "content": "Shameful...@POTUS #FarmersProtest https://t.co/I6WM0JiYFj",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361485053268738050&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/turraju/status/1361485053268738050",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-16 01:18:26",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Harmandeep Tur",
+            "user_id": 1202167146
+        },
+        "1360766490027425792": {
+            "id": 1360766490027425792,
+            "content": "This is such a shame #FarmersProtest https://t.co/bo3kifkG23",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360766490027425792&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/SimranC19594141/status/1360766490027425792",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-14 01:43:07",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Simran Cheema",
+            "user_id": 1357158762390388738
+        },
+        "1362206149504864259": {
+            "id": 1362206149504864259,
+            "content": "What's this @ZeeNews @sudhirchaudhary . Shame on you..\n#FarmersProtest https://t.co/sI8qIT9Z9s",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1362206149504864259&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/SukheetJataana/status/1362206149504864259",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-18 01:03:49",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Sukhjeet Singh",
+            "user_id": 1333495213877235714
+        },
+        "1361234005182603264": {
+            "id": 1361234005182603264,
+            "content": "What a shame #FarmersProtest https://t.co/nS1e3o3xts",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361234005182603264&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/afzalusyed/status/1361234005182603264",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-15 08:40:51",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Afzal Lala",
+            "user_id": 99150055
+        },
+        "1360909285136490502": {
+            "id": 1360909285136490502,
+            "content": "Shame on @narendramodi #FarmersProtest https://t.co/MzRktpNA0o",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360909285136490502&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/Navdeep04768034/status/1360909285136490502",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-14 11:10:32",
+            "likes": 3,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Navdeep Kaur",
+            "user_id": 1333105559311147011
+        },
+        "1360747618905845764": {
+            "id": 1360747618905845764,
+            "content": "Shame..\n#FarmersProtest https://t.co/0QRIa299zE",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360747618905845764&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/vik_physio/status/1360747618905845764",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-14 00:28:08",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Vikramjeet singh",
+            "user_id": 357092746
+        },
+        "1361098720209641473": {
+            "id": 1361098720209641473,
+            "content": "Very shameful\n#FarmersProtest https://t.co/UvBt8R4aFL",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361098720209641473&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/g47079412/status/1361098720209641473",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-14 23:43:17",
+            "likes": 2,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "g k",
+            "user_id": 862374328301527040
+        },
+        "1360640776753930243": {
+            "id": 1360640776753930243,
+            "content": "#FarmersProtest \nShame https://t.co/pswROx36Ve",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360640776753930243&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/Satwinder013/status/1360640776753930243",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-13 17:23:35",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Satwinder Singh",
+            "user_id": 1333711434891444226
+        },
+        "1361329636483948550": {
+            "id": 1361329636483948550,
+            "content": "@PMOIndia Shame on you!!! #FarmersProtest https://t.co/SCkFtAp8T3",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361329636483948550&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/saltlamp11/status/1361329636483948550",
+            "ranking": 0.7588893366533415,
+            "date": "2021-02-15 15:00:52",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "saltlamp Kaur",
+            "user_id": 1347775963258564610
+        },
+        "1362924274026049536": {
+            "id": 1362924274026049536,
+            "content": "Shame shame shame government\n#FarmersProtest https://t.co/nclh1vR14p",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1362924274026049536&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/DhaliwalSandee4/status/1362924274026049536",
+            "ranking": 0.7456604529972094,
+            "date": "2021-02-20 00:37:23",
+            "likes": 9,
+            "retweets": 8,
+            "language": [
+                "english"
+            ],
+            "user_name": "karjdaar kisaan Sandeep Singh",
+            "user_id": 1181068927503257605
+        },
+        "1360193698030493701": {
+            "id": 1360193698030493701,
+            "content": "Shame Modi - Shame BJP\n#FarmersProtest #SupportFarmersProtest https://t.co/gp9llqJGz0",
+            "hashtags": "#FarmersProtest #SupportFarmersProtest",
+            "url": "doc_details?id=1360193698030493701&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/SainiNps/status/1360193698030493701",
+            "ranking": 0.7453017481138551,
+            "date": "2021-02-12 11:47:03",
+            "likes": 1,
+            "retweets": 2,
+            "language": [
+                "english"
+            ],
+            "user_name": "N P S (#Yes_I_am_andolanjeevi #I_Support_Farmers)",
+            "user_id": 1227214195692687360
+        },
+        "1360194026339618817": {
+            "id": 1360194026339618817,
+            "content": "Shame Modi - Shame BJP\n#FarmersProtest #SupportFarmersProtest https://t.co/axkpKhqFD6",
+            "hashtags": "#FarmersProtest #SupportFarmersProtest",
+            "url": "doc_details?id=1360194026339618817&search_id=f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+            "tweet_url": "https://twitter.com/SainiNps/status/1360194026339618817",
+            "ranking": 0.7453017481138551,
+            "date": "2021-02-12 11:48:21",
+            "likes": 1,
+            "retweets": 2,
+            "language": [
+                "english"
+            ],
+            "user_name": "N P S (#Yes_I_am_andolanjeevi #I_Support_Farmers)",
+            "user_id": 1227214195692687360
+        }
+    },
+    "last_activity": "2024-12-04T18:55:42.314235",
+    "missions": [
+        {
+            "mission_id": "fd0bff36-007d-47d1-97a8-bc6eb66d47c7",
+            "queries": [
+                {
+                    "query_id": "ce8426b5-c544-4bc8-9b12-de91dbb67836",
+                    "query_text": "farmers rights",
+                    "timestamp": "2024-12-04T18:55:05.036551"
+                },
+                {
+                    "query_id": "dedde8b1-f507-474f-a19b-b8ddfae34b21",
+                    "query_text": "indian government rights",
+                    "timestamp": "2024-12-04T18:55:19.775026"
+                }
+            ]
+        },
+        {
+            "mission_id": "6d10efe4-6673-485c-ad4a-1615cc647077",
+            "queries": [
+                {
+                    "query_id": "f56b6308-0aec-4393-8bfa-fcdee4d9b36b",
+                    "query_text": "shame on modi",
+                    "timestamp": "2024-12-04T18:55:32.052260"
+                }
+            ]
+        }
+    ]
+}

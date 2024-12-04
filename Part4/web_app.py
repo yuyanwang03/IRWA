@@ -12,6 +12,7 @@ import atexit
 import requests
 from datetime import timedelta
 from difflib import SequenceMatcher
+from collections import Counter
 
 # -----------------------------------------------
 # Configuration and Constants
@@ -78,6 +79,56 @@ def save_session_to_file():
         print(f"Session data saved to {session_path}")
     except Exception as e:
         print(f"Error saving session data: {e}")
+
+def load_all_sessions(session_dir):
+    """Load and aggregate data from all session files."""
+    session_files = [f for f in os.listdir(session_dir) if f.endswith('.json')]
+    aggregated_data = {
+        "total_sessions": 0,
+        "total_duration": timedelta(),
+        "browsers": Counter(),
+        "operating_systems": Counter(),
+        "locations": Counter(),
+        "total_queries": 0,
+        "total_clicks": 0,
+        "missions": 0,
+        "queries_per_mission": [],
+    }
+
+    for session_file in session_files:
+        try:
+            with open(os.path.join(session_dir, session_file), 'r', encoding='utf-8') as file:
+                session_data = json.load(file)
+
+            # Increment session count
+            aggregated_data["total_sessions"] += 1
+
+            # Aggregate session duration
+            if session_data.get("duration"):
+                aggregated_data["total_duration"] += timedelta(seconds=session_data["duration"])
+
+            # Aggregate user context
+            user_context = session_data.get("user_context", {})
+            aggregated_data["browsers"][user_context.get("browser", "Unknown")] += 1
+            aggregated_data["operating_systems"][user_context.get("os", "Unknown")] += 1
+            location = f"{user_context.get('city', 'Unknown')}, {user_context.get('country', 'Unknown')}"
+            aggregated_data["locations"][location] += 1
+
+            # Aggregate analytics
+            analytics = session_data.get("analytics", {})
+            aggregated_data["total_queries"] += len(analytics.get("queries", []))
+            aggregated_data["total_clicks"] += len(analytics.get("clicks", []))
+
+            # Aggregate missions
+            missions = session_data.get("missions", [])
+            aggregated_data["missions"] += len(missions)
+            aggregated_data["queries_per_mission"].extend(
+                [len(mission.get("queries", [])) for mission in missions]
+            )
+        except Exception as e:
+            print(f"Error processing session file {session_file}: {e}")
+
+    return aggregated_data
 
 # -----------------------------------------------
 # Application Initialization
@@ -308,6 +359,27 @@ def analytics_dashboard():
         most_frequent_queries=most_frequent_queries,
         queries_over_time=queries_over_time,
         clicks_per_document=clicks_per_document
+    )
+
+@app.route('/all_sessions', methods=['GET'])
+def all_sessions_analytics():
+    """Analyze and display data for all sessions."""
+    aggregated_data = load_all_sessions(SESSION_DIRECTORY)
+
+    # Compute average metrics
+    avg_session_duration = aggregated_data["total_duration"] / aggregated_data["total_sessions"] if aggregated_data["total_sessions"] > 0 else timedelta()
+    avg_queries_per_mission = sum(aggregated_data["queries_per_mission"]) / len(aggregated_data["queries_per_mission"]) if aggregated_data["queries_per_mission"] else 0
+
+    return render_template(
+        'all_sessions.html',
+        total_sessions=aggregated_data["total_sessions"],
+        avg_session_duration=str(avg_session_duration),
+        total_queries=aggregated_data["total_queries"],
+        total_clicks=aggregated_data["total_clicks"],
+        avg_queries_per_mission=avg_queries_per_mission,
+        browsers=dict(aggregated_data["browsers"]),
+        operating_systems=dict(aggregated_data["operating_systems"]),
+        locations=dict(aggregated_data["locations"]),
     )
 # -----------------------------------------------
 # Run the Application

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block page_title %}All Sessions Analytics{% endblock %}
+{% block content %}
+<div>
+    <a href="{{ url_for('index') }}" class="btn btn-primary">
+        Back to Home
+    </a>
+    <a href="{{ url_for('analytics_dashboard') }}" class="btn btn-secondary">
+        Back to Analytics Dashboard
+    </a>
+</div>
+<p>&nbsp;</p>
+<h1 class="text-center mb-4">All Sessions Analytics</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Key Metrics</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Total Sessions: {{ total_sessions }}</li>
+            <li class="list-group-item">Average Session Duration: {{ avg_session_duration }}</li>
+            <li class="list-group-item">Total Queries: {{ total_queries }}</li>
+            <li class="list-group-item">Total Clicks: {{ total_clicks }}</li>
+            <li class="list-group-item">Average Queries per Mission: {{ avg_queries_per_mission }}</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2>Top Browsers and OS</h2>
+        <h4>Browsers</h4>
+        <ul class="list-group">
+            {% for browser, count in browsers.items() %}
+            <li class="list-group-item">{{ browser }}: {{ count }}</li>
+            {% endfor %}
+        </ul>
+        <h4>Operating Systems</h4>
+        <ul class="list-group">
+            {% for os, count in operating_systems.items() %}
+            <li class="list-group-item">{{ os }}: {{ count }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<hr>
+
+<h2>Locations</h2>
+<ul class="list-group">
+    {% for location, count in locations.items() %}
+    <li class="list-group-item">{{ location }}: {{ count }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

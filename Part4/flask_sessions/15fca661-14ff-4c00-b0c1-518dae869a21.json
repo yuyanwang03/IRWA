@@ -1,0 +1,1096 @@
+{
+    "session_id": "15fca661-14ff-4c00-b0c1-518dae869a21",
+    "user_context": {
+        "browser": "Chrome",
+        "os": "Macintosh",
+        "device": "Unknown",
+        "ip_address": "127.0.0.1",
+        "timestamp": "2024-12-04T19:37:20.239272",
+        "time_of_day": "19:37:20",
+        "date": "2024-12-04",
+        "city": "Unknown",
+        "country": "Unknown"
+    },
+    "duration": 75.286985,
+    "analytics": {
+        "requests": [
+            {
+                "endpoint": "/search",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T19:37:20.146355",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:21.423788",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:21.428049",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:21.429129",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/log_document_click",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T19:37:22.653992",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/doc_details",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:22.658751",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:22.725035",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:22.727063",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:22.728582",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:26.753490",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:26.772989",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:26.777166",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:26.779544",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/log_document_click",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T19:37:28.471864",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/doc_details",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:28.476800",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:28.529459",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:28.539363",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:28.541125",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:29.910652",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:29.930396",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:29.932513",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:29.934791",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:31.164854",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:31.176618",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:31.179304",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:31.185951",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T19:37:34.296608",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:35.393716",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:35.396309",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:35.397195",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/log_document_click",
+                "http_method": "POST",
+                "timestamp": "2024-12-04T19:37:36.789192",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/doc_details",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:36.793996",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:36.869672",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:36.871355",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:36.872536",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/search",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:38.173506",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:38.192112",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:38.200030",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:38.202899",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:39.111261",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:39.129493",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:39.132466",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:39.134597",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/analytics",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:39.995363",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:40.020239",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:40.026090",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:40.028473",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/all_sessions",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:42.883871",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:42.918989",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:42.921297",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:42.922849",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:44.931873",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:44.946766",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:44.954133",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:44.956402",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/analytics",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:54.711485",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:54.733728",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:54.736528",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:54.737923",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/all_sessions",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:55.815320",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/bootstrap.min.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:55.828562",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/styles/custom.css",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:55.830621",
+                "ip_address": "127.0.0.1"
+            },
+            {
+                "endpoint": "/static/logo.png",
+                "http_method": "GET",
+                "timestamp": "2024-12-04T19:37:55.832210",
+                "ip_address": "127.0.0.1"
+            }
+        ],
+        "queries": [
+            {
+                "query_id": "a9061cf9-b14e-4424-a380-b4bd63e649dc",
+                "query_text": "human rights violation",
+                "term_count": 3,
+                "timestamp": "2024-12-04T19:37:21.390875",
+                "num_result": 40
+            },
+            {
+                "query_id": "794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+                "query_text": "rights of human",
+                "term_count": 3,
+                "timestamp": "2024-12-04T19:37:35.373518",
+                "num_result": 40
+            }
+        ],
+        "clicks": [
+            {
+                "document_id": "1362712341280882688",
+                "query_id": "a9061cf9-b14e-4424-a380-b4bd63e649dc",
+                "rank": "1",
+                "timestamp": "2024-12-04T19:37:22.654311"
+            },
+            {
+                "document_id": "1362712341280882688",
+                "query_id": "a9061cf9-b14e-4424-a380-b4bd63e649dc",
+                "rank": "1",
+                "timestamp": "2024-12-04T19:37:28.472006"
+            },
+            {
+                "document_id": "1361596881328091143",
+                "query_id": "794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+                "rank": "2",
+                "timestamp": "2024-12-04T19:37:36.789348"
+            }
+        ]
+    },
+    "missions": [
+        {
+            "mission_id": "e9c1d8aa-91b7-4a27-b325-dff360d5c2c9",
+            "queries": [
+                {
+                    "query_id": "a9061cf9-b14e-4424-a380-b4bd63e649dc",
+                    "query_text": "human rights violation",
+                    "timestamp": "2024-12-04T19:37:21.390932"
+                },
+                {
+                    "query_id": "794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+                    "query_text": "rights of human",
+                    "timestamp": "2024-12-04T19:37:35.373585"
+                }
+            ]
+        }
+    ],
+    "last_search_query": "rights of human",
+    "last_found_count": 40,
+    "search_id": "794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+    "last_query_documents": {
+        "1361854741421039621": {
+            "id": 1361854741421039621,
+            "content": "No human rights in India @UNHumanRights #FarmersProtest https://t.co/HGD8vkn1Be",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361854741421039621&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/preety21132050/status/1361854741421039621",
+            "ranking": 0.8797615869572046,
+            "date": "2021-02-17 01:47:27",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "preetybhatty Andolan Jivi\ud83d\udcab",
+            "user_id": 1301296949287510016
+        },
+        "1361596881328091143": {
+            "id": 1361596881328091143,
+            "content": "@Bkuektaugrahan Humans have the right to protect humanity. \nDo what is right.\n#RememberSirChhotuRamInModiEra\n#FarmersProtest",
+            "hashtags": "#RememberSirChhotuRamInModiEra #FarmersProtest",
+            "url": "doc_details?id=1361596881328091143&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/KaurKhalsa/status/1361596881328091143",
+            "ranking": 0.8243439234712484,
+            "date": "2021-02-16 08:42:48",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "KaurKhalsa",
+            "user_id": 15503929
+        },
+        "1362608586564673537": {
+            "id": 1362608586564673537,
+            "content": "Farmers Rights = Human Rights #FarmersProtest #StandWithFarmers https://t.co/LYHywz908h",
+            "hashtags": "#FarmersProtest #StandWithFarmers",
+            "url": "doc_details?id=1362608586564673537&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rebelpacifist/status/1362608586564673537",
+            "ranking": 0.8119370741628684,
+            "date": "2021-02-19 03:42:57",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Theinactiveactivist",
+            "user_id": 1354532795847073796
+        },
+        "1361908586608173059": {
+            "id": 1361908586608173059,
+            "content": "#FarmersProtest #StandWithFarmers \nFarmers Rights = Human Rights https://t.co/Pie2xGZMKO",
+            "hashtags": "#FarmersProtest #StandWithFarmers",
+            "url": "doc_details?id=1361908586608173059&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rebelpacifist/status/1361908586608173059",
+            "ranking": 0.8119370741628684,
+            "date": "2021-02-17 05:21:24",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Theinactiveactivist",
+            "user_id": 1354532795847073796
+        },
+        "1362521301483540483": {
+            "id": 1362521301483540483,
+            "content": "Farmers Rights = Human Rights #FarmersProtest #StandWithFarmers https://t.co/D4iN8Yr6IX",
+            "hashtags": "#FarmersProtest #StandWithFarmers",
+            "url": "doc_details?id=1362521301483540483&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rebelpacifist/status/1362521301483540483",
+            "ranking": 0.8119370741628684,
+            "date": "2021-02-18 21:56:07",
+            "likes": 5,
+            "retweets": 4,
+            "language": [
+                "english"
+            ],
+            "user_name": "Theinactiveactivist",
+            "user_id": 1354532795847073796
+        },
+        "1361300739906097156": {
+            "id": 1361300739906097156,
+            "content": "The bjp against human rights.  #FarmersProtest https://t.co/NRrIOPlb3z",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361300739906097156&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/Manpree52519810/status/1361300739906097156",
+            "ranking": 0.8118011237876734,
+            "date": "2021-02-15 13:06:02",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Manpreetmani",
+            "user_id": 1281984025922424832
+        },
+        "1360651738529689606": {
+            "id": 1360651738529689606,
+            "content": "@MMazleon @rihanna @SRat246 Stand for the human rights #FarmersProtest https://t.co/kvx0dWKqxb",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360651738529689606&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/Parneet65842616/status/1360651738529689606",
+            "ranking": 0.8043937914835693,
+            "date": "2021-02-13 18:07:08",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Parneet",
+            "user_id": 1341139217615781888
+        },
+        "1362209348026576898": {
+            "id": 1362209348026576898,
+            "content": "@NadiaWhittomeMP We stand with the Farmers.\nHuman Rights For All\n#FarmersProtest",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1362209348026576898&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rajafahimkayani/status/1362209348026576898",
+            "ranking": 0.7684321802470192,
+            "date": "2021-02-18 01:16:31",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Raja Fahim Kayani \ud83c\udf41",
+            "user_id": 1120698836
+        },
+        "1361624625885626371": {
+            "id": 1361624625885626371,
+            "content": "@Bkuektaugrahan @bhupenderc19 @al_penliebe @SikhFeminist @newsclickin Humans have the right to protect humanity. \n\n#RememberSirChhotuRamInModiEra\n#FarmersProtest",
+            "hashtags": "#RememberSirChhotuRamInModiEra #FarmersProtest",
+            "url": "doc_details?id=1361624625885626371&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/KaurKhalsa/status/1361624625885626371",
+            "ranking": 0.7342481126308175,
+            "date": "2021-02-16 10:33:03",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "KaurKhalsa",
+            "user_id": 15503929
+        },
+        "1361624283605311495": {
+            "id": 1361624283605311495,
+            "content": "@LiveLawIndia Humans have the right to protect humanity. \n\n#RememberSirChhotuRamInModiEra\n#FarmersProtest",
+            "hashtags": "#RememberSirChhotuRamInModiEra #FarmersProtest",
+            "url": "doc_details?id=1361624283605311495&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/KaurKhalsa/status/1361624283605311495",
+            "ranking": 0.7342481126308175,
+            "date": "2021-02-16 10:31:41",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "KaurKhalsa",
+            "user_id": 15503929
+        },
+        "1362791005523636232": {
+            "id": 1362791005523636232,
+            "content": "Farmers Rights = Human Rights #FarmersProtest #StandWithFarmers\n#HumanRights https://t.co/uYsnAr3OXp",
+            "hashtags": "#FarmersProtest #StandWithFarmers #HumanRights",
+            "url": "doc_details?id=1362791005523636232&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rebelpacifist/status/1362791005523636232",
+            "ranking": 0.7213555995172856,
+            "date": "2021-02-19 15:47:49",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Theinactiveactivist",
+            "user_id": 1354532795847073796
+        },
+        "1362247573197660162": {
+            "id": 1362247573197660162,
+            "content": "@Navneet_Tweets_ Always praying and thinking of humanity \ud83d\ude4f\nFarmers Rights = Human Rights #FarmersProtest #StandWithFarmers",
+            "hashtags": "#FarmersProtest #StandWithFarmers",
+            "url": "doc_details?id=1362247573197660162&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rebelpacifist/status/1362247573197660162",
+            "ranking": 0.7091054988686485,
+            "date": "2021-02-18 03:48:25",
+            "likes": 2,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Theinactiveactivist",
+            "user_id": 1354532795847073796
+        },
+        "1361155080188289025": {
+            "id": 1361155080188289025,
+            "content": "Now where is human rights? \ud83d\ude1e \n#farmersrprotest #FarmersProtest https://t.co/f4D1ZlxDDJ",
+            "hashtags": "#farmersrprotest #FarmersProtest",
+            "url": "doc_details?id=1361155080188289025&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/karanvi93283291/status/1361155080188289025",
+            "ranking": 0.6878022195607317,
+            "date": "2021-02-15 03:27:14",
+            "likes": 5,
+            "retweets": 4,
+            "language": [
+                "english"
+            ],
+            "user_name": "karanvirsingh\ud83d\udc73\ud83c\udffb\u200d\u2642\ufe0f",
+            "user_id": 1333399102676209665
+        },
+        "1361134000392335361": {
+            "id": 1361134000392335361,
+            "content": "Indian Farmers human rights and rights to Livelihoods is a matter of concern for all of humanity. \n#IndiaBeingSilenced \n#FarmersProtest https://t.co/ifwJtC2HCs",
+            "hashtags": "#IndiaBeingSilenced #FarmersProtest",
+            "url": "doc_details?id=1361134000392335361&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/Rajvindermaan19/status/1361134000392335361",
+            "ranking": 0.6807968755149681,
+            "date": "2021-02-15 02:03:28",
+            "likes": 4,
+            "retweets": 2,
+            "language": [
+                "english"
+            ],
+            "user_name": "Rajvinder Kaur Maan",
+            "user_id": 836928922377859072
+        },
+        "1362282294996701186": {
+            "id": 1362282294996701186,
+            "content": "May God have mercy on humanity \ud83d\ude4f\u2764\ufe0f\ud83d\ude4f\n\n#HumanRights  \nFarmers Rights = Human Rights\n#FarmersProtest https://t.co/9eKiupbL68",
+            "hashtags": "#HumanRights #FarmersProtest",
+            "url": "doc_details?id=1362282294996701186&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rebelpacifist/status/1362282294996701186",
+            "ranking": 0.662023884114016,
+            "date": "2021-02-18 06:06:23",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Theinactiveactivist",
+            "user_id": 1354532795847073796
+        },
+        "1362951062546694144": {
+            "id": 1362951062546694144,
+            "content": "@JovJatt @simsationxo @Ash_Kalra @essentiawater 22g! Water is a basic human right! Speak up for humanity! @Ash_Kalra!\n#FarmersProtest",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1362951062546694144&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/Monica_Gill1/status/1362951062546694144",
+            "ranking": 0.6518029382925153,
+            "date": "2021-02-20 02:23:50",
+            "likes": 3,
+            "retweets": 2,
+            "language": [
+                "english"
+            ],
+            "user_name": "Monica Gill",
+            "user_id": 71129057
+        },
+        "1361596132376387585": {
+            "id": 1361596132376387585,
+            "content": "@Deepkam02245532 Humans \u2014 humanity.  \n\n#RememberSirChhotuRamInModiEra\n#FarmersProtest",
+            "hashtags": "#RememberSirChhotuRamInModiEra #FarmersProtest",
+            "url": "doc_details?id=1361596132376387585&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/KaurKhalsa/status/1361596132376387585",
+            "ranking": 0.6499210794597121,
+            "date": "2021-02-16 08:39:49",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "KaurKhalsa",
+            "user_id": 15503929
+        },
+        "1361905593053630471": {
+            "id": 1361905593053630471,
+            "content": "@Savekisaan Yes the narrative should be the #FarmersProtest  because Farmers Rights = Human Rights",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361905593053630471&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rebelpacifist/status/1361905593053630471",
+            "ranking": 0.6434162638874722,
+            "date": "2021-02-17 05:09:31",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Theinactiveactivist",
+            "user_id": 1354532795847073796
+        },
+        "1362795882224046091": {
+            "id": 1362795882224046091,
+            "content": "DON'T FORGET\nFarmers Rights = Human Rights\n#FarmersProtest #StandWithFarmers\n#HumanRights https://t.co/kTM7MbHysO",
+            "hashtags": "#FarmersProtest #StandWithFarmers #HumanRights",
+            "url": "doc_details?id=1362795882224046091&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/rebelpacifist/status/1362795882224046091",
+            "ranking": 0.6311718727647203,
+            "date": "2021-02-19 16:07:12",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Theinactiveactivist",
+            "user_id": 1354532795847073796
+        },
+        "1361668152275308547": {
+            "id": 1361668152275308547,
+            "content": "@ChandigarhViz Right \n#FarmersProtest",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361668152275308547&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/KaurMann1998/status/1361668152275308547",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-16 13:26:00",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83d\udc51kaur Manpreet \ud83d\udc51",
+            "user_id": 849207804766203904
+        },
+        "1360303291234721795": {
+            "id": 1360303291234721795,
+            "content": "@iKomal_433 @Navjotk17902569 \ud83e\udd23\ud83e\udd23\ud83e\udd23\ud83e\udd23Right #FarmersProtest #\u0915\u093f\u0938\u093e\u0928_\u0915\u0947_\u0932\u093f\u090f_\u092c\u094b\u0932\u0947_\u092d\u093e\u0930\u0924",
+            "hashtags": "#FarmersProtest #\u0915\u093f\u0938\u093e\u0928_\u0915\u0947_\u0932\u093f\u090f_\u092c\u094b\u0932\u0947_\u092d\u093e\u0930\u0924",
+            "url": "doc_details?id=1360303291234721795&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/MBKPeace/status/1360303291234721795",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-12 19:02:32",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "BKM",
+            "user_id": 1333550966449299457
+        },
+        "1360828716402761729": {
+            "id": 1360828716402761729,
+            "content": "Right #\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 #FarmersProtest https://t.co/BQmBoeIk6d",
+            "hashtags": "#\u0936\u0939\u0940\u0926_\u091c\u0935\u093e\u0928_\u0936\u0939\u0940\u0926_\u0915\u093f\u0938\u093e\u0928 #FarmersProtest",
+            "url": "doc_details?id=1360828716402761729&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1360828716402761729",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-14 05:50:23",
+            "likes": 2,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        },
+        "1360874979676585988": {
+            "id": 1360874979676585988,
+            "content": "Right #FarmersProtest https://t.co/i7XHeP8PQS",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360874979676585988&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/Manpret_majjail/status/1360874979676585988",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-14 08:54:13",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Manpreet Singh Majjail",
+            "user_id": 1333679947374792708
+        },
+        "1360268676000325633": {
+            "id": 1360268676000325633,
+            "content": "Right #FarmersProtest https://t.co/JXfW3LNI3b",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360268676000325633&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1360268676000325633",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-12 16:44:59",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        },
+        "1360879256415404038": {
+            "id": 1360879256415404038,
+            "content": "Right #FarmersProtest https://t.co/h7Por0C1n8",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360879256415404038&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1360879256415404038",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-14 09:11:13",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        },
+        "1360656827873067013": {
+            "id": 1360656827873067013,
+            "content": "@meenaharris @simran Right #FarmersProtestDelhi2020 #FarmersProtest",
+            "hashtags": "#FarmersProtestDelhi2020 #FarmersProtest",
+            "url": "doc_details?id=1360656827873067013&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/dal12695584/status/1360656827873067013",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-13 18:27:22",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "dal",
+            "user_id": 1336769043743719425
+        },
+        "1360268508282703880": {
+            "id": 1360268508282703880,
+            "content": "Right #FarmersProtest https://t.co/maEg35E6bZ",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360268508282703880&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1360268508282703880",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-12 16:44:19",
+            "likes": 0,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        },
+        "1362838457672957957": {
+            "id": 1362838457672957957,
+            "content": "Right #FarmersProtest https://t.co/xHgUBCV5xo",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1362838457672957957&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1362838457672957957",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-19 18:56:23",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        },
+        "1360983033176858627": {
+            "id": 1360983033176858627,
+            "content": "Right #FarmersProtest https://t.co/8hxHNb0XiT",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360983033176858627&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1360983033176858627",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-14 16:03:35",
+            "likes": 3,
+            "retweets": 4,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        },
+        "1361461534937862147": {
+            "id": 1361461534937862147,
+            "content": "@Nobel_62 @nidhi_dwivedy @narendramodi About right.\n#FarmersProtest",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361461534937862147&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/Anumanhas11/status/1361461534937862147",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-15 23:44:59",
+            "likes": 1,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "Anu Manhas",
+            "user_id": 1337896193083416577
+        },
+        "1364112261787176962": {
+            "id": 1364112261787176962,
+            "content": "@SukhdevSingh_ #FarmersProtest \nRight",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1364112261787176962&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/preetysaini321/status/1364112261787176962",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-23 07:18:01",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Kamal kaur",
+            "user_id": 2886641113
+        },
+        "1361730948992176134": {
+            "id": 1361730948992176134,
+            "content": "\ud83d\ude02\ud83d\ude02\ud83d\udc4c\ud83c\udffbright  #FarmersProtest https://t.co/u3yW8rD3bH",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361730948992176134&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/jasssaini27/status/1361730948992176134",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-16 17:35:32",
+            "likes": 0,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "Tractor2\u0a1f\u0a71\u0a35\u0a3f\u0a1f\u0a30",
+            "user_id": 1323842122362093573
+        },
+        "1361452404177330179": {
+            "id": 1361452404177330179,
+            "content": "The #FarmersProtest on @BBCNewsnight right now",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361452404177330179&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/HayreSay/status/1361452404177330179",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-15 23:08:42",
+            "likes": 19,
+            "retweets": 5,
+            "language": [
+                "english"
+            ],
+            "user_name": "S Hayre",
+            "user_id": 1026193529813512198
+        },
+        "1364155503215923203": {
+            "id": 1364155503215923203,
+            "content": "Right \ud83d\udc4d\n#FarmersProtest https://t.co/Hn1I3hDkKG",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1364155503215923203&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/OnkarSi62246976/status/1364155503215923203",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-23 10:09:51",
+            "likes": 2,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "\u0a2d\u0a09 \u0a38\u0a3f\u0a30\u0a2b \u0a05\u0a15\u0a3e\u0a32 \u0a26\u0a3e \u261d\ufe0f",
+            "user_id": 1241722083274457088
+        },
+        "1363247595787669504": {
+            "id": 1363247595787669504,
+            "content": "That's 100% right #FarmersProtest https://t.co/ZNkCERhrN0",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1363247595787669504&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/kpreet11/status/1363247595787669504",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-20 22:02:09",
+            "likes": 0,
+            "retweets": 2,
+            "language": [
+                "english"
+            ],
+            "user_name": "Komal Kaur",
+            "user_id": 3115591836
+        },
+        "1363229907233492992": {
+            "id": 1363229907233492992,
+            "content": "Right #farmersprotest https://t.co/Rx5vIys4Yr",
+            "hashtags": "#farmersprotest",
+            "url": "doc_details?id=1363229907233492992&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1363229907233492992",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-20 20:51:52",
+            "likes": 2,
+            "retweets": 1,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        },
+        "1364182513694826497": {
+            "id": 1364182513694826497,
+            "content": "Right #Farmersprotest https://t.co/Og0F2kmqRv",
+            "hashtags": "#Farmersprotest",
+            "url": "doc_details?id=1364182513694826497&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/brarboota111/status/1364182513694826497",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-23 11:57:11",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "\u0a0f\u0a15\u0a2e \u0a2c\u0a30\u0a3e\u0a5c",
+            "user_id": 837249309032603649
+        },
+        "1363656244301492224": {
+            "id": 1363656244301492224,
+            "content": "Right. \n#FarmersProtest https://t.co/2mZj1lC3Yc",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1363656244301492224&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/Savekisaan/status/1363656244301492224",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-22 01:05:58",
+            "likes": 2,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "\u0a05\u0a70\u0a26\u0a4b\u0a32\u0a23\u0a1c\u0a40\u0a35\u0a40-\u0a15\u0a3f\u0a38\u0a3e\u0a28-\u0a26\u0a3f\u0a09\u0a32 \ud83d\ude4f",
+            "user_id": 337710315
+        },
+        "1361039121888796674": {
+            "id": 1361039121888796674,
+            "content": "Right #FarmersProtest https://t.co/Ix82gk9zuU",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1361039121888796674&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1361039121888796674",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-14 19:46:28",
+            "likes": 1,
+            "retweets": 0,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        },
+        "1360381497350500353": {
+            "id": 1360381497350500353,
+            "content": "Right #FarmersProtest https://t.co/xx78Jc8Qj7",
+            "hashtags": "#FarmersProtest",
+            "url": "doc_details?id=1360381497350500353&search_id=794bc5a8-139e-4e58-aa31-9baf57dc7b4c",
+            "tweet_url": "https://twitter.com/GSPANNU13/status/1360381497350500353",
+            "ranking": 0.627208805074526,
+            "date": "2021-02-13 00:13:18",
+            "likes": 7,
+            "retweets": 2,
+            "language": [
+                "english"
+            ],
+            "user_name": "\ud83c\udf3e \u0a15\u0a3f\u0a38\u0a3e\u0a28\u0a40 \u0a38\u0a70\u0a18\u0a30\u0a38\u0a3c \ud83c\udf3e",
+            "user_id": 1188119618608664576
+        }
+    },
+    "last_activity": "2024-12-04T19:37:55.832198"
+}

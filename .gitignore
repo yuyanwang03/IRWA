@@ -2,5 +2,3 @@
 /venv/
 /venv
 farmers-protest-tweets.json
-**/flask_sessions/
-**/flask_sessions
